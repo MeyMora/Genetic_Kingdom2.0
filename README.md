@@ -50,12 +50,12 @@ El proyecto tiene un valor de 20% de la nota del curso<br>
   - Toda la solución debe estar integrada<br>
   - La interfaz de usuario debe estar implementada e integrada<br>
 • El código tendrá un valor total de 80%, la documentación 10% y la defensa 10%. De estas notas se calculará la Nota Final del Proyecto.<br>
-• Aun cuando el código y la documentación tienen sus notas por separado, se aplican las siguientes restricciones <br>
-  - Si no se entrega documentación en formato PDF, automáticamente se obtiene una nota de 0. <br>
-  - Si no se utiliza un manejador de código se obtiene una nota de 0. <br>
-  - Si la documentación no se entrega en la fecha indicada se obtiene una nota de 0. <br>
-  - El código debe desarrollarse en C++, si no, se obtendrá una nota de 0. <br>
-  - La nota de la documentación es proporcional a la completitud del código. Es decir, si el código no está completo, aunque la documentación lo esté, no se dará 
+- Aun cuando el código y la documentación tienen sus notas por separado, se aplican las siguientes restricciones <br>
+   - Si no se entrega documentación en formato PDF, automáticamente se obtiene una nota de 0. <br>
+   - Si no se utiliza un manejador de código se obtiene una nota de 0. <br>
+   - Si la documentación no se entrega en la fecha indicada se obtiene una nota de 0. <br>
+   - El código debe desarrollarse en C++, si no, se obtendrá una nota de 0. <br>
+   - La nota de la documentación es proporcional a la completitud del código. Es decir, si el código no está completo, aunque la documentación lo esté, no se dará 
     el total del 10%<br>
 • La revisión de la documentación será realizada por parte del profesor, no durante la defensa del proyecto.<br>
 • Cada grupo tendrá 20 minutos para exponer su trabajo al profesor y defenderlo, es responsabilidad de los estudiantes mostrar todo el trabajo realizado, por lo que se recomienda tener todo listo antes de entrar a la defensa.<br>
