@@ -27,12 +27,12 @@ El proyecto consiste en implementar un juego estilo “Tower Defense” ambienta
 •Artilleros: costo alto, alcance bajo, daño alto, tiempo de recarga de ataque alto <br>     | 5     |
 | 005    | El jugador puede ir colocando las torres en cada lugar disponible. Al seleccionar un lugar disponible, puede escoger el tipo de torre que desea crear. Cada torre tiene un costo en oro.    | 10    |
 | 006    | Los enemigos aparecen por oleadas. Cada oleada es una generación que evoluciona. 
-## Los enemigos pueden ser los siguientes:<br>
+Los enemigos pueden ser los siguientes:<br>
 •Ogros: son el enemigo más básico. Son resistentes a los arqueros y débiles contra la magia y la artillería. Son lentos.<br>
 •Elfos Oscuros: son resistentes a la magia, pero débiles a los arqueros y a la artillería. Son muy rápidos<br>
 •Harpías: solo pueden ser atacadas por magia y arqueros. Tienen una velocidad intermedia<br>
 •Mercenarios: son débiles a la magia, pero resistentes a arqueros y artillería.<br>
-## Cada enemigo tiene atributos como:<br>
+Cada enemigo tiene atributos como:<br>
 •Vida<br>
 •Velocidad<br>
 •Resistencia a flechas<br>
