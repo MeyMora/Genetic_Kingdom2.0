@@ -5,7 +5,7 @@ Algoritmos y Estructuras de Datos II (CE 2103)<br>
 I Semestre 2025<br>
 # OBJETIVOS
 GENERAL<br>
-• Diseñar e implementar un juego de estilo “Tower defense” en que se apliquen algoritmos genéticos y pathfinding
+• Diseñar e implementar un juego de estilo “Tower defense” en que se apliquen algoritmos genéticos y pathfinding <br>
 ESPECÍFICOS<br>
 • Implementar algoritmos genéticos y pathfinding en el lenguaje de programación C++.<br>
 • Diseñar la solución de un problema mediante OOP aplicada a C++.<br>
