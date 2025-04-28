@@ -34,28 +34,28 @@ El proyecto consiste en implementar un juego estilo “Tower Defense” ambienta
 •La fecha de entrega será según lo especificado en el TEC Digital. Se entrega en el TEC digital, un archivo PDF con la documentación. Los estudiantes pueden seguir trabajando en el código hasta 15 minutos antes de la cita revisión oficial.<br> 
 # DOCUMENTACIÓN
 La documentación deberá tener las partes estándar:
-Portada <br>
-Introducción <br>
-Tabla de contenidos (con los títulos debidamente numerados) <br>
-Breve descripción del problema <br>
-Descripción de la solución <br>
+-Portada <br>
+-Introducción <br>
+-Tabla de contenidos (con los títulos debidamente numerados) <br>
+-Breve descripción del problema <br>
+-Descripción de la solución <br>
   - Por cada uno de los requerimientos, se deberá explicar cómo se implementó, alternativas consideradas, limitaciones, problemas encontrados y cualquier otro 
     aspecto relevante. <br>
- Diseño general: diagrama de clases UML con las clases relevantes que muestren el diseño orientado a objetos y los patrones de diseño aplicados<br>
- Enlace al repositorio de Github<br>
+- Diseño general: diagrama de clases UML con las clases relevantes que muestren el diseño orientado a objetos y los patrones de diseño aplicados<br>
+- Enlace al repositorio de Github<br>
 
 # EVALUACIÓN
 El proyecto tiene un valor de 20% de la nota del curso<br>
 • Los proyectos que no cumplan con los siguientes requisitos no serán revisados:<br>
-   Toda la solución debe estar integrada<br>
-   La interfaz de usuario debe estar implementada e integrada<br>
+  - Toda la solución debe estar integrada<br>
+  - La interfaz de usuario debe estar implementada e integrada<br>
 • El código tendrá un valor total de 80%, la documentación 10% y la defensa 10%. De estas notas se calculará la Nota Final del Proyecto.<br>
 • Aun cuando el código y la documentación tienen sus notas por separado, se aplican las siguientes restricciones <br>
-   Si no se entrega documentación en formato PDF, automáticamente se obtiene una nota de 0. <br>
-   Si no se utiliza un manejador de código se obtiene una nota de 0. <br>
-   Si la documentación no se entrega en la fecha indicada se obtiene una nota de 0. <br>
-   El código debe desarrollarse en C++, si no, se obtendrá una nota de 0. <br>
-   La nota de la documentación es proporcional a la completitud del código. Es decir, si el código no está completo, aunque la documentación lo esté, no se dará 
+  - Si no se entrega documentación en formato PDF, automáticamente se obtiene una nota de 0. <br>
+  - Si no se utiliza un manejador de código se obtiene una nota de 0. <br>
+  - Si la documentación no se entrega en la fecha indicada se obtiene una nota de 0. <br>
+  - El código debe desarrollarse en C++, si no, se obtendrá una nota de 0. <br>
+  - La nota de la documentación es proporcional a la completitud del código. Es decir, si el código no está completo, aunque la documentación lo esté, no se dará 
     el total del 10%<br>
 • La revisión de la documentación será realizada por parte del profesor, no durante la defensa del proyecto.<br>
 • Cada grupo tendrá 20 minutos para exponer su trabajo al profesor y defenderlo, es responsabilidad de los estudiantes mostrar todo el trabajo realizado, por lo que se recomienda tener todo listo antes de entrar a la defensa.<br>
