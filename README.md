@@ -33,12 +33,12 @@ El proyecto consiste en implementar un juego estilo “Tower Defense” ambienta
 •El uso de Git y Github es obligatorio <br>
 •La fecha de entrega será según lo especificado en el TEC Digital. Se entrega en el TEC digital, un archivo PDF con la documentación. Los estudiantes pueden seguir trabajando en el código hasta 15 minutos antes de la cita revisión oficial.<br> 
 # DOCUMENTACIÓN
-La documentación deberá tener las partes estándar:
--Portada <br>
--Introducción <br>
--Tabla de contenidos (con los títulos debidamente numerados) <br>
--Breve descripción del problema <br>
--Descripción de la solución <br>
+La documentación deberá tener las partes estándar: <br>
+- Portada <br>
+- Introducción <br>
+- Tabla de contenidos (con los títulos debidamente numerados) <br>
+- Breve descripción del problema <br>
+- Descripción de la solución <br>
   - Por cada uno de los requerimientos, se deberá explicar cómo se implementó, alternativas consideradas, limitaciones, problemas encontrados y cualquier otro 
     aspecto relevante. <br>
 - Diseño general: diagrama de clases UML con las clases relevantes que muestren el diseño orientado a objetos y los patrones de diseño aplicados<br>
