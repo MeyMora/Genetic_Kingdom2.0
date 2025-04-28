@@ -5,12 +5,12 @@ Algoritmos y Estructuras de Datos II (CE 2103)<br>
 I Semestre 2025<br>
 # OBJETIVOS
 GENERAL<br>
-•Diseñar e implementar un juego de estilo “Tower defense” en que se apliquen algoritmos genéticos y pathfinding
+• Diseñar e implementar un juego de estilo “Tower defense” en que se apliquen algoritmos genéticos y pathfinding
 ESPECÍFICOS<br>
-•Implementar algoritmos genéticos y pathfinding en el lenguaje de programación C++.<br>
-•Diseñar la solución de un problema mediante OOP aplicada a C++.<br>
-•Implementar un diseño OOP en el lenguaje de programación C++.<br>
-•Implementar una arquitectura cliente servidor.<br>
+• Implementar algoritmos genéticos y pathfinding en el lenguaje de programación C++.<br>
+• Diseñar la solución de un problema mediante OOP aplicada a C++.<br>
+• Implementar un diseño OOP en el lenguaje de programación C++.<br>
+• Implementar una arquitectura cliente servidor.<br>
 
 # REQUERIMIENTOS
 El proyecto consiste en implementar un juego estilo “Tower Defense” ambientado en la edad media en C++ para desktop. El juego genera oleadas de enemigos de distintas clases y categorías. El jugador se encarga de colocar torres en lugares predeterminados para evitar que los enemigos crucen el puente del castillo. Después de cada oleada, los enemigos evolucionan haciendo más difícil evitar que los enemigos crucen el puente. <br>
@@ -29,9 +29,9 @@ El proyecto consiste en implementar un juego estilo “Tower Defense” ambienta
 | 009    | El juego muestra un panel con estadísticas como:<br> •Generaciones transcurridas <br> •Enemigos muertos en cada oleada<br> •Fitness de cada individuo de la oleada<br> •Nivel de cada torre <br> •Probabilidad de mutaciones y cantidad de mutaciones ocurridas <br>   | 5     |
 
 # ASPECTOS OPERATIVOS
-•El trabajo se realizará en grupos de tres personas <br>
-•El uso de Git y Github es obligatorio <br>
-•La fecha de entrega será según lo especificado en el TEC Digital. Se entrega en el TEC digital, un archivo PDF con la documentación. Los estudiantes pueden seguir trabajando en el código hasta 15 minutos antes de la cita revisión oficial.<br> 
+• El trabajo se realizará en grupos de tres personas <br>
+• El uso de Git y Github es obligatorio <br>
+• La fecha de entrega será según lo especificado en el TEC Digital. Se entrega en el TEC digital, un archivo PDF con la documentación. Los estudiantes pueden seguir trabajando en el código hasta 15 minutos antes de la cita revisión oficial.<br> 
 # DOCUMENTACIÓN
 La documentación deberá tener las partes estándar: <br>
 - Portada <br>
@@ -46,10 +46,10 @@ La documentación deberá tener las partes estándar: <br>
 
 # EVALUACIÓN
 El proyecto tiene un valor de 20% de la nota del curso<br>
-• Los proyectos que no cumplan con los siguientes requisitos no serán revisados:<br>
+- Los proyectos que no cumplan con los siguientes requisitos no serán revisados:<br>
   - Toda la solución debe estar integrada<br>
   - La interfaz de usuario debe estar implementada e integrada<br>
-• El código tendrá un valor total de 80%, la documentación 10% y la defensa 10%. De estas notas se calculará la Nota Final del Proyecto.<br>
+- El código tendrá un valor total de 80%, la documentación 10% y la defensa 10%. De estas notas se calculará la Nota Final del Proyecto.<br>
 - Aun cuando el código y la documentación tienen sus notas por separado, se aplican las siguientes restricciones <br>
    - Si no se entrega documentación en formato PDF, automáticamente se obtiene una nota de 0. <br>
    - Si no se utiliza un manejador de código se obtiene una nota de 0. <br>
@@ -57,9 +57,9 @@ El proyecto tiene un valor de 20% de la nota del curso<br>
    - El código debe desarrollarse en C++, si no, se obtendrá una nota de 0. <br>
    - La nota de la documentación es proporcional a la completitud del código. Es decir, si el código no está completo, aunque la documentación lo esté, no se dará 
     el total del 10%<br>
-• La revisión de la documentación será realizada por parte del profesor, no durante la defensa del proyecto.<br>
-• Cada grupo tendrá 20 minutos para exponer su trabajo al profesor y defenderlo, es responsabilidad de los estudiantes mostrar todo el trabajo realizado, por lo que se recomienda tener todo listo antes de entrar a la defensa.<br>
-• Cada grupo es responsable de llevar los equipos requeridos para la revisión, si no cuentan con estos deberán avisar al menos 2 días antes de la revisión a el profesor para coordinar el préstamo de estos.<br>
-• Durante la revisión únicamente podrán participar los miembros del grupo, asistentes, otros profesores y el coordinador del área.<br>
+- La revisión de la documentación será realizada por parte del profesor, no durante la defensa del proyecto.<br>
+- Cada grupo tendrá 20 minutos para exponer su trabajo al profesor y defenderlo, es responsabilidad de los estudiantes mostrar todo el trabajo realizado, por lo que se recomienda tener todo listo antes de entrar a la defensa.<br>
+- Cada grupo es responsable de llevar los equipos requeridos para la revisión, si no cuentan con estos deberán avisar al menos 2 días antes de la revisión a el profesor para coordinar el préstamo de estos.<br>
+- Durante la revisión únicamente podrán participar los miembros del grupo, asistentes, otros profesores y el coordinador del área.<br>
 
 
