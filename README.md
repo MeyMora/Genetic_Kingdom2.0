@@ -10,7 +10,7 @@ ESPECÍFICOS<br>
 • Implementar algoritmos genéticos y pathfinding en el lenguaje de programación C++.<br>
 • Diseñar la solución de un problema mediante OOP aplicada a C++.<br>
 • Implementar un diseño OOP en el lenguaje de programación C++.<br>
-• Implementar una arquitectura cliente servidor.<br>
+
 
 # REQUERIMIENTOS
 El proyecto consiste en implementar un juego estilo “Tower Defense” ambientado en la edad media en C++ para desktop. El juego genera oleadas de enemigos de distintas clases y categorías. El jugador se encarga de colocar torres en lugares predeterminados para evitar que los enemigos crucen el puente del castillo. Después de cada oleada, los enemigos evolucionan haciendo más difícil evitar que los enemigos crucen el puente. <br>
