@@ -1,0 +1,33 @@
+﻿  main.cpp
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\filesystem(12): warning STL4038: The contents of <filesystem> are available only with C++17 or later.
+C:\Users\Meibel\Desktop\1Semestre 2025\Estructuras_de_Datos_II\Proyecto_2\Genetic_Kingdom\main.cpp(43,74): warning C4244: 'argumento': conversión de 'int' a 'T'; posible pérdida de datos
+C:\Users\Meibel\Desktop\1Semestre 2025\Estructuras_de_Datos_II\Proyecto_2\Genetic_Kingdom\main.cpp(43,74): warning C4244:         with
+C:\Users\Meibel\Desktop\1Semestre 2025\Estructuras_de_Datos_II\Proyecto_2\Genetic_Kingdom\main.cpp(43,74): warning C4244:         [
+C:\Users\Meibel\Desktop\1Semestre 2025\Estructuras_de_Datos_II\Proyecto_2\Genetic_Kingdom\main.cpp(43,74): warning C4244:             T=float
+C:\Users\Meibel\Desktop\1Semestre 2025\Estructuras_de_Datos_II\Proyecto_2\Genetic_Kingdom\main.cpp(43,74): warning C4244:         ]
+C:\Users\Meibel\Desktop\1Semestre 2025\Estructuras_de_Datos_II\Proyecto_2\Genetic_Kingdom\main.cpp(43,53): warning C4244: 'argumento': conversión de 'int' a 'T'; posible pérdida de datos
+C:\Users\Meibel\Desktop\1Semestre 2025\Estructuras_de_Datos_II\Proyecto_2\Genetic_Kingdom\main.cpp(43,53): warning C4244:         with
+C:\Users\Meibel\Desktop\1Semestre 2025\Estructuras_de_Datos_II\Proyecto_2\Genetic_Kingdom\main.cpp(43,53): warning C4244:         [
+C:\Users\Meibel\Desktop\1Semestre 2025\Estructuras_de_Datos_II\Proyecto_2\Genetic_Kingdom\main.cpp(43,53): warning C4244:             T=float
+C:\Users\Meibel\Desktop\1Semestre 2025\Estructuras_de_Datos_II\Proyecto_2\Genetic_Kingdom\main.cpp(43,53): warning C4244:         ]
+C:\Users\Meibel\Desktop\1Semestre 2025\Estructuras_de_Datos_II\Proyecto_2\Genetic_Kingdom\main.cpp(44,25): warning C4244: 'inicializando': conversión de 'T' a 'int'; posible pérdida de datos
+C:\Users\Meibel\Desktop\1Semestre 2025\Estructuras_de_Datos_II\Proyecto_2\Genetic_Kingdom\main.cpp(44,25): warning C4244:         with
+C:\Users\Meibel\Desktop\1Semestre 2025\Estructuras_de_Datos_II\Proyecto_2\Genetic_Kingdom\main.cpp(44,25): warning C4244:         [
+C:\Users\Meibel\Desktop\1Semestre 2025\Estructuras_de_Datos_II\Proyecto_2\Genetic_Kingdom\main.cpp(44,25): warning C4244:             T=float
+C:\Users\Meibel\Desktop\1Semestre 2025\Estructuras_de_Datos_II\Proyecto_2\Genetic_Kingdom\main.cpp(44,25): warning C4244:         ]
+C:\Users\Meibel\Desktop\1Semestre 2025\Estructuras_de_Datos_II\Proyecto_2\Genetic_Kingdom\main.cpp(45,26): warning C4244: 'inicializando': conversión de 'T' a 'int'; posible pérdida de datos
+C:\Users\Meibel\Desktop\1Semestre 2025\Estructuras_de_Datos_II\Proyecto_2\Genetic_Kingdom\main.cpp(45,26): warning C4244:         with
+C:\Users\Meibel\Desktop\1Semestre 2025\Estructuras_de_Datos_II\Proyecto_2\Genetic_Kingdom\main.cpp(45,26): warning C4244:         [
+C:\Users\Meibel\Desktop\1Semestre 2025\Estructuras_de_Datos_II\Proyecto_2\Genetic_Kingdom\main.cpp(45,26): warning C4244:             T=float
+C:\Users\Meibel\Desktop\1Semestre 2025\Estructuras_de_Datos_II\Proyecto_2\Genetic_Kingdom\main.cpp(45,26): warning C4244:         ]
+C:\Users\Meibel\Desktop\1Semestre 2025\Estructuras_de_Datos_II\Proyecto_2\Genetic_Kingdom\main.cpp(57,47): warning C4566: el carácter representado por el nombre de carácter universal '\u274C' no se puede representar en la página de códigos actual (1252)
+C:\Users\Meibel\Desktop\1Semestre 2025\Estructuras_de_Datos_II\Proyecto_2\Genetic_Kingdom\main.cpp(75,57): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
+C:\Users\Meibel\Desktop\1Semestre 2025\Estructuras_de_Datos_II\Proyecto_2\Genetic_Kingdom\main.cpp(75,39): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
+C:\Users\Meibel\Desktop\1Semestre 2025\Estructuras_de_Datos_II\Proyecto_2\Genetic_Kingdom\main.cpp(111,51): warning C4244: 'argumento': conversión de 'T' a 'float'; posible pérdida de datos
+C:\Users\Meibel\Desktop\1Semestre 2025\Estructuras_de_Datos_II\Proyecto_2\Genetic_Kingdom\main.cpp(111,51): warning C4244:         with
+C:\Users\Meibel\Desktop\1Semestre 2025\Estructuras_de_Datos_II\Proyecto_2\Genetic_Kingdom\main.cpp(111,51): warning C4244:         [
+C:\Users\Meibel\Desktop\1Semestre 2025\Estructuras_de_Datos_II\Proyecto_2\Genetic_Kingdom\main.cpp(111,51): warning C4244:             T=unsigned int
+C:\Users\Meibel\Desktop\1Semestre 2025\Estructuras_de_Datos_II\Proyecto_2\Genetic_Kingdom\main.cpp(111,51): warning C4244:         ]
+  MensajeTemporal.cpp
+  Generando código...
+  Genetic_Kingdom.vcxproj -> C:\Users\Meibel\Desktop\1Semestre 2025\Estructuras_de_Datos_II\Proyecto_2\Genetic_Kingdom\x64\Debug\Genetic_Kingdom.exe
