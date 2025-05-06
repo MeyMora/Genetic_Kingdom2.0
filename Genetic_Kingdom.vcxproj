@@ -124,6 +124,9 @@ sfml-window-d.lib;
 sfml-system-d.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <AdditionalLibraryDirectories>C:\SFML-2.5.1\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
+    <PreBuildEvent>
+      <Command>if exist "$(ProjectDir)assets" xcopy "$(ProjectDir)assets" "$(OutDir)assets" /E /Y /I</Command>
+    </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
@@ -153,8 +156,11 @@ sfml-system.lib;%(AdditionalDependencies)</AdditionalDependencies>
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Mapa.cpp" />
     <ClCompile Include="MensajeTemporal.cpp" />
+    <ClCompile Include="PanelEstadisticas.cpp" />
+    <ClCompile Include="PanelMejora.cpp" />
     <ClCompile Include="SelectorTorre.cpp" />
     <ClCompile Include="Torre.cpp" />
+    <ClCompile Include="TorreConSprite.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Casilla.h" />
@@ -162,9 +168,12 @@ sfml-system.lib;%(AdditionalDependencies)</AdditionalDependencies>
     <ClInclude Include="Mapa.h" />
     <ClInclude Include="MensajeTemporal.h" />
     <ClInclude Include="Nodo.h" />
+    <ClInclude Include="PanelEstadisticas.h" />
+    <ClInclude Include="PanelMejora.h" />
     <ClInclude Include="SelectorTorre.h" />
     <ClInclude Include="TipoTorre.h" />
     <ClInclude Include="Torre.h" />
+    <ClInclude Include="TorreConSprite.h" />
     <ClInclude Include="TorreConTipo.h" />
     <ClInclude Include="TorreFactory.h" />
   </ItemGroup>

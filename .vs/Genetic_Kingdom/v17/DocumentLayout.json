@@ -3,8 +3,56 @@
   "WorkspaceRootPath": "C:\\Users\\Meibel\\Desktop\\1Semestre 2025\\Estructuras_de_Datos_II\\Proyecto_2\\Genetic_Kingdom\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{7543428B-079F-4AB5-9D90-4F32D977E905}|Genetic_Kingdom.vcxproj|C:\\Users\\Meibel\\Desktop\\1Semestre 2025\\Estructuras_de_Datos_II\\Proyecto_2\\Genetic_Kingdom\\PanelMejora.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{7543428B-079F-4AB5-9D90-4F32D977E905}|Genetic_Kingdom.vcxproj|solutionrelative:PanelMejora.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7543428B-079F-4AB5-9D90-4F32D977E905}|Genetic_Kingdom.vcxproj|C:\\Users\\Meibel\\Desktop\\1Semestre 2025\\Estructuras_de_Datos_II\\Proyecto_2\\Genetic_Kingdom\\PanelMejora.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{7543428B-079F-4AB5-9D90-4F32D977E905}|Genetic_Kingdom.vcxproj|solutionrelative:PanelMejora.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7543428B-079F-4AB5-9D90-4F32D977E905}|Genetic_Kingdom.vcxproj|C:\\Users\\Meibel\\Desktop\\1Semestre 2025\\Estructuras_de_Datos_II\\Proyecto_2\\Genetic_Kingdom\\PanelEstadisticas.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{7543428B-079F-4AB5-9D90-4F32D977E905}|Genetic_Kingdom.vcxproj|solutionrelative:PanelEstadisticas.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{7543428B-079F-4AB5-9D90-4F32D977E905}|Genetic_Kingdom.vcxproj|C:\\Users\\Meibel\\Desktop\\1Semestre 2025\\Estructuras_de_Datos_II\\Proyecto_2\\Genetic_Kingdom\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{7543428B-079F-4AB5-9D90-4F32D977E905}|Genetic_Kingdom.vcxproj|solutionrelative:main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7543428B-079F-4AB5-9D90-4F32D977E905}|Genetic_Kingdom.vcxproj|C:\\Users\\Meibel\\Desktop\\1Semestre 2025\\Estructuras_de_Datos_II\\Proyecto_2\\Genetic_Kingdom\\PanelEstadisticas.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{7543428B-079F-4AB5-9D90-4F32D977E905}|Genetic_Kingdom.vcxproj|solutionrelative:PanelEstadisticas.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7543428B-079F-4AB5-9D90-4F32D977E905}|Genetic_Kingdom.vcxproj|C:\\Users\\Meibel\\Desktop\\1Semestre 2025\\Estructuras_de_Datos_II\\Proyecto_2\\Genetic_Kingdom\\Mapa.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{7543428B-079F-4AB5-9D90-4F32D977E905}|Genetic_Kingdom.vcxproj|solutionrelative:Mapa.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7543428B-079F-4AB5-9D90-4F32D977E905}|Genetic_Kingdom.vcxproj|C:\\Users\\Meibel\\Desktop\\1Semestre 2025\\Estructuras_de_Datos_II\\Proyecto_2\\Genetic_Kingdom\\Mapa.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{7543428B-079F-4AB5-9D90-4F32D977E905}|Genetic_Kingdom.vcxproj|solutionrelative:Mapa.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7543428B-079F-4AB5-9D90-4F32D977E905}|Genetic_Kingdom.vcxproj|C:\\Users\\Meibel\\Desktop\\1Semestre 2025\\Estructuras_de_Datos_II\\Proyecto_2\\Genetic_Kingdom\\Torre.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{7543428B-079F-4AB5-9D90-4F32D977E905}|Genetic_Kingdom.vcxproj|solutionrelative:Torre.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7543428B-079F-4AB5-9D90-4F32D977E905}|Genetic_Kingdom.vcxproj|C:\\Users\\Meibel\\Desktop\\1Semestre 2025\\Estructuras_de_Datos_II\\Proyecto_2\\Genetic_Kingdom\\TorreFactory.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{7543428B-079F-4AB5-9D90-4F32D977E905}|Genetic_Kingdom.vcxproj|solutionrelative:TorreFactory.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7543428B-079F-4AB5-9D90-4F32D977E905}|Genetic_Kingdom.vcxproj|C:\\Users\\Meibel\\Desktop\\1Semestre 2025\\Estructuras_de_Datos_II\\Proyecto_2\\Genetic_Kingdom\\Torre.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{7543428B-079F-4AB5-9D90-4F32D977E905}|Genetic_Kingdom.vcxproj|solutionrelative:Torre.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7543428B-079F-4AB5-9D90-4F32D977E905}|Genetic_Kingdom.vcxproj|C:\\Users\\Meibel\\Desktop\\1Semestre 2025\\Estructuras_de_Datos_II\\Proyecto_2\\Genetic_Kingdom\\TorreConSprite.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{7543428B-079F-4AB5-9D90-4F32D977E905}|Genetic_Kingdom.vcxproj|solutionrelative:TorreConSprite.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7543428B-079F-4AB5-9D90-4F32D977E905}|Genetic_Kingdom.vcxproj|C:\\Users\\Meibel\\Desktop\\1Semestre 2025\\Estructuras_de_Datos_II\\Proyecto_2\\Genetic_Kingdom\\TipoTorre.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{7543428B-079F-4AB5-9D90-4F32D977E905}|Genetic_Kingdom.vcxproj|solutionrelative:TipoTorre.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7543428B-079F-4AB5-9D90-4F32D977E905}|Genetic_Kingdom.vcxproj|C:\\Users\\Meibel\\Desktop\\1Semestre 2025\\Estructuras_de_Datos_II\\Proyecto_2\\Genetic_Kingdom\\TorreConSprite.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{7543428B-079F-4AB5-9D90-4F32D977E905}|Genetic_Kingdom.vcxproj|solutionrelative:TorreConSprite.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7543428B-079F-4AB5-9D90-4F32D977E905}|Genetic_Kingdom.vcxproj|C:\\Users\\Meibel\\Desktop\\1Semestre 2025\\Estructuras_de_Datos_II\\Proyecto_2\\Genetic_Kingdom\\MensajeTemporal.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -27,36 +75,12 @@
       "RelativeMoniker": "D:0:0:{7543428B-079F-4AB5-9D90-4F32D977E905}|Genetic_Kingdom.vcxproj|solutionrelative:TorreConTipo.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7543428B-079F-4AB5-9D90-4F32D977E905}|Genetic_Kingdom.vcxproj|C:\\Users\\Meibel\\Desktop\\1Semestre 2025\\Estructuras_de_Datos_II\\Proyecto_2\\Genetic_Kingdom\\Mapa.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{7543428B-079F-4AB5-9D90-4F32D977E905}|Genetic_Kingdom.vcxproj|solutionrelative:Mapa.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7543428B-079F-4AB5-9D90-4F32D977E905}|Genetic_Kingdom.vcxproj|C:\\Users\\Meibel\\Desktop\\1Semestre 2025\\Estructuras_de_Datos_II\\Proyecto_2\\Genetic_Kingdom\\Torre.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{7543428B-079F-4AB5-9D90-4F32D977E905}|Genetic_Kingdom.vcxproj|solutionrelative:Torre.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7543428B-079F-4AB5-9D90-4F32D977E905}|Genetic_Kingdom.vcxproj|C:\\Users\\Meibel\\Desktop\\1Semestre 2025\\Estructuras_de_Datos_II\\Proyecto_2\\Genetic_Kingdom\\Torre.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{7543428B-079F-4AB5-9D90-4F32D977E905}|Genetic_Kingdom.vcxproj|solutionrelative:Torre.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7543428B-079F-4AB5-9D90-4F32D977E905}|Genetic_Kingdom.vcxproj|C:\\Users\\Meibel\\Desktop\\1Semestre 2025\\Estructuras_de_Datos_II\\Proyecto_2\\Genetic_Kingdom\\TipoTorre.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{7543428B-079F-4AB5-9D90-4F32D977E905}|Genetic_Kingdom.vcxproj|solutionrelative:TipoTorre.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7543428B-079F-4AB5-9D90-4F32D977E905}|Genetic_Kingdom.vcxproj|C:\\Users\\Meibel\\Desktop\\1Semestre 2025\\Estructuras_de_Datos_II\\Proyecto_2\\Genetic_Kingdom\\TorreFactory.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{7543428B-079F-4AB5-9D90-4F32D977E905}|Genetic_Kingdom.vcxproj|solutionrelative:TorreFactory.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{7543428B-079F-4AB5-9D90-4F32D977E905}|Genetic_Kingdom.vcxproj|C:\\Users\\Meibel\\Desktop\\1Semestre 2025\\Estructuras_de_Datos_II\\Proyecto_2\\Genetic_Kingdom\\Casilla.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{7543428B-079F-4AB5-9D90-4F32D977E905}|Genetic_Kingdom.vcxproj|solutionrelative:Casilla.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7543428B-079F-4AB5-9D90-4F32D977E905}|Genetic_Kingdom.vcxproj|C:\\Users\\Meibel\\Desktop\\1Semestre 2025\\Estructuras_de_Datos_II\\Proyecto_2\\Genetic_Kingdom\\estadoCasilla.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{7543428B-079F-4AB5-9D90-4F32D977E905}|Genetic_Kingdom.vcxproj|solutionrelative:estadoCasilla.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7543428B-079F-4AB5-9D90-4F32D977E905}|Genetic_Kingdom.vcxproj|C:\\Users\\Meibel\\Desktop\\1Semestre 2025\\Estructuras_de_Datos_II\\Proyecto_2\\Genetic_Kingdom\\Mapa.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{7543428B-079F-4AB5-9D90-4F32D977E905}|Genetic_Kingdom.vcxproj|solutionrelative:Mapa.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7543428B-079F-4AB5-9D90-4F32D977E905}|Genetic_Kingdom.vcxproj|C:\\Users\\Meibel\\Desktop\\1Semestre 2025\\Estructuras_de_Datos_II\\Proyecto_2\\Genetic_Kingdom\\Nodo.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -74,71 +98,97 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "MensajeTemporal.cpp",
-              "DocumentMoniker": "C:\\Users\\Meibel\\Desktop\\1Semestre 2025\\Estructuras_de_Datos_II\\Proyecto_2\\Genetic_Kingdom\\MensajeTemporal.cpp",
-              "RelativeDocumentMoniker": "MensajeTemporal.cpp",
-              "ToolTip": "C:\\Users\\Meibel\\Desktop\\1Semestre 2025\\Estructuras_de_Datos_II\\Proyecto_2\\Genetic_Kingdom\\MensajeTemporal.cpp",
-              "RelativeToolTip": "MensajeTemporal.cpp",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAAACUAAAAAAAAAAAAAAA==",
+              "Title": "PanelMejora.cpp",
+              "DocumentMoniker": "C:\\Users\\Meibel\\Desktop\\1Semestre 2025\\Estructuras_de_Datos_II\\Proyecto_2\\Genetic_Kingdom\\PanelMejora.cpp",
+              "RelativeDocumentMoniker": "PanelMejora.cpp",
+              "ToolTip": "C:\\Users\\Meibel\\Desktop\\1Semestre 2025\\Estructuras_de_Datos_II\\Proyecto_2\\Genetic_Kingdom\\PanelMejora.cpp",
+              "RelativeToolTip": "PanelMejora.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-05-04T02:00:47.03Z",
+              "WhenOpened": "2025-05-04T21:07:36.819Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "MensajeTemporal.h",
-              "DocumentMoniker": "C:\\Users\\Meibel\\Desktop\\1Semestre 2025\\Estructuras_de_Datos_II\\Proyecto_2\\Genetic_Kingdom\\MensajeTemporal.h",
-              "RelativeDocumentMoniker": "MensajeTemporal.h",
-              "ToolTip": "C:\\Users\\Meibel\\Desktop\\1Semestre 2025\\Estructuras_de_Datos_II\\Proyecto_2\\Genetic_Kingdom\\MensajeTemporal.h",
-              "RelativeToolTip": "MensajeTemporal.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "PanelMejora.h",
+              "DocumentMoniker": "C:\\Users\\Meibel\\Desktop\\1Semestre 2025\\Estructuras_de_Datos_II\\Proyecto_2\\Genetic_Kingdom\\PanelMejora.h",
+              "RelativeDocumentMoniker": "PanelMejora.h",
+              "ToolTip": "C:\\Users\\Meibel\\Desktop\\1Semestre 2025\\Estructuras_de_Datos_II\\Proyecto_2\\Genetic_Kingdom\\PanelMejora.h",
+              "RelativeToolTip": "PanelMejora.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-05-04T01:59:57.424Z",
+              "WhenOpened": "2025-05-04T21:02:07.568Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "SelectorTorre.cpp",
-              "DocumentMoniker": "C:\\Users\\Meibel\\Desktop\\1Semestre 2025\\Estructuras_de_Datos_II\\Proyecto_2\\Genetic_Kingdom\\SelectorTorre.cpp",
-              "RelativeDocumentMoniker": "SelectorTorre.cpp",
-              "ToolTip": "C:\\Users\\Meibel\\Desktop\\1Semestre 2025\\Estructuras_de_Datos_II\\Proyecto_2\\Genetic_Kingdom\\SelectorTorre.cpp",
-              "RelativeToolTip": "SelectorTorre.cpp",
-              "ViewState": "AgIAAEsAAAAAAAAAAAAAABUAAAAfAAAAAAAAAA==",
+              "Title": "PanelEstadisticas.cpp",
+              "DocumentMoniker": "C:\\Users\\Meibel\\Desktop\\1Semestre 2025\\Estructuras_de_Datos_II\\Proyecto_2\\Genetic_Kingdom\\PanelEstadisticas.cpp",
+              "RelativeDocumentMoniker": "PanelEstadisticas.cpp",
+              "ToolTip": "C:\\Users\\Meibel\\Desktop\\1Semestre 2025\\Estructuras_de_Datos_II\\Proyecto_2\\Genetic_Kingdom\\PanelEstadisticas.cpp",
+              "RelativeToolTip": "PanelEstadisticas.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-05-04T01:33:51.736Z",
+              "WhenOpened": "2025-05-04T17:51:14.074Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "PanelEstadisticas.h",
+              "DocumentMoniker": "C:\\Users\\Meibel\\Desktop\\1Semestre 2025\\Estructuras_de_Datos_II\\Proyecto_2\\Genetic_Kingdom\\PanelEstadisticas.h",
+              "RelativeDocumentMoniker": "PanelEstadisticas.h",
+              "ToolTip": "C:\\Users\\Meibel\\Desktop\\1Semestre 2025\\Estructuras_de_Datos_II\\Proyecto_2\\Genetic_Kingdom\\PanelEstadisticas.h",
+              "RelativeToolTip": "PanelEstadisticas.h",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-05-04T17:48:17.186Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "TorreFactory.h",
+              "DocumentMoniker": "C:\\Users\\Meibel\\Desktop\\1Semestre 2025\\Estructuras_de_Datos_II\\Proyecto_2\\Genetic_Kingdom\\TorreFactory.h",
+              "RelativeDocumentMoniker": "TorreFactory.h",
+              "ToolTip": "C:\\Users\\Meibel\\Desktop\\1Semestre 2025\\Estructuras_de_Datos_II\\Proyecto_2\\Genetic_Kingdom\\TorreFactory.h",
+              "RelativeToolTip": "TorreFactory.h",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABgAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-05-03T21:20:49.705Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "SelectorTorre.h",
-              "DocumentMoniker": "C:\\Users\\Meibel\\Desktop\\1Semestre 2025\\Estructuras_de_Datos_II\\Proyecto_2\\Genetic_Kingdom\\SelectorTorre.h",
-              "RelativeDocumentMoniker": "SelectorTorre.h",
-              "ToolTip": "C:\\Users\\Meibel\\Desktop\\1Semestre 2025\\Estructuras_de_Datos_II\\Proyecto_2\\Genetic_Kingdom\\SelectorTorre.h",
-              "RelativeToolTip": "SelectorTorre.h",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAAA0AAAAhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-05-04T01:33:04.613Z",
+              "Title": "main.cpp",
+              "DocumentMoniker": "C:\\Users\\Meibel\\Desktop\\1Semestre 2025\\Estructuras_de_Datos_II\\Proyecto_2\\Genetic_Kingdom\\main.cpp",
+              "RelativeDocumentMoniker": "main.cpp",
+              "ToolTip": "C:\\Users\\Meibel\\Desktop\\1Semestre 2025\\Estructuras_de_Datos_II\\Proyecto_2\\Genetic_Kingdom\\main.cpp",
+              "RelativeToolTip": "main.cpp",
+              "ViewState": "AgIAAMgAAAAAAAAAAAAQwNYAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-05-03T16:53:33.578Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "TorreConTipo.h",
-              "DocumentMoniker": "C:\\Users\\Meibel\\Desktop\\1Semestre 2025\\Estructuras_de_Datos_II\\Proyecto_2\\Genetic_Kingdom\\TorreConTipo.h",
-              "RelativeDocumentMoniker": "TorreConTipo.h",
-              "ToolTip": "C:\\Users\\Meibel\\Desktop\\1Semestre 2025\\Estructuras_de_Datos_II\\Proyecto_2\\Genetic_Kingdom\\TorreConTipo.h",
-              "RelativeToolTip": "TorreConTipo.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAACAAAAAAAAAA==",
+              "DocumentIndex": 9,
+              "Title": "Torre.h",
+              "DocumentMoniker": "C:\\Users\\Meibel\\Desktop\\1Semestre 2025\\Estructuras_de_Datos_II\\Proyecto_2\\Genetic_Kingdom\\Torre.h",
+              "RelativeDocumentMoniker": "Torre.h",
+              "ToolTip": "C:\\Users\\Meibel\\Desktop\\1Semestre 2025\\Estructuras_de_Datos_II\\Proyecto_2\\Genetic_Kingdom\\Torre.h",
+              "RelativeToolTip": "Torre.h",
+              "ViewState": "AgIAADUAAAAAAAAAAAAAACEAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-05-03T21:52:27.83Z",
+              "WhenOpened": "2025-05-03T20:22:25.169Z",
               "EditorCaption": ""
             },
             {
@@ -149,49 +199,35 @@
               "RelativeDocumentMoniker": "Torre.cpp",
               "ToolTip": "C:\\Users\\Meibel\\Desktop\\1Semestre 2025\\Estructuras_de_Datos_II\\Proyecto_2\\Genetic_Kingdom\\Torre.cpp",
               "RelativeToolTip": "Torre.cpp",
-              "ViewState": "AgIAADwAAAAAAAAAAAAAACIAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAC8AAAAAAAAAAAAAAD0AAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-05-03T20:33:38.623Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "main.cpp",
-              "DocumentMoniker": "C:\\Users\\Meibel\\Desktop\\1Semestre 2025\\Estructuras_de_Datos_II\\Proyecto_2\\Genetic_Kingdom\\main.cpp",
-              "RelativeDocumentMoniker": "main.cpp",
-              "ToolTip": "C:\\Users\\Meibel\\Desktop\\1Semestre 2025\\Estructuras_de_Datos_II\\Proyecto_2\\Genetic_Kingdom\\main.cpp",
-              "RelativeToolTip": "main.cpp",
-              "ViewState": "AgIAAG8AAAAAAAAAAAAAAHsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-05-03T16:53:33.578Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "TipoTorre.h",
-              "DocumentMoniker": "C:\\Users\\Meibel\\Desktop\\1Semestre 2025\\Estructuras_de_Datos_II\\Proyecto_2\\Genetic_Kingdom\\TipoTorre.h",
-              "RelativeDocumentMoniker": "TipoTorre.h",
-              "ToolTip": "C:\\Users\\Meibel\\Desktop\\1Semestre 2025\\Estructuras_de_Datos_II\\Proyecto_2\\Genetic_Kingdom\\TipoTorre.h",
-              "RelativeToolTip": "TipoTorre.h",
+              "DocumentIndex": 5,
+              "Title": "Mapa.h",
+              "DocumentMoniker": "C:\\Users\\Meibel\\Desktop\\1Semestre 2025\\Estructuras_de_Datos_II\\Proyecto_2\\Genetic_Kingdom\\Mapa.h",
+              "RelativeDocumentMoniker": "Mapa.h",
+              "ToolTip": "C:\\Users\\Meibel\\Desktop\\1Semestre 2025\\Estructuras_de_Datos_II\\Proyecto_2\\Genetic_Kingdom\\Mapa.h",
+              "RelativeToolTip": "Mapa.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-05-03T21:18:47.409Z",
+              "WhenOpened": "2025-05-03T16:54:07.934Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Torre.h",
-              "DocumentMoniker": "C:\\Users\\Meibel\\Desktop\\1Semestre 2025\\Estructuras_de_Datos_II\\Proyecto_2\\Genetic_Kingdom\\Torre.h",
-              "RelativeDocumentMoniker": "Torre.h",
-              "ToolTip": "C:\\Users\\Meibel\\Desktop\\1Semestre 2025\\Estructuras_de_Datos_II\\Proyecto_2\\Genetic_Kingdom\\Torre.h",
-              "RelativeToolTip": "Torre.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABGAAAAAAAAAA==",
+              "DocumentIndex": 15,
+              "Title": "SelectorTorre.h",
+              "DocumentMoniker": "C:\\Users\\Meibel\\Desktop\\1Semestre 2025\\Estructuras_de_Datos_II\\Proyecto_2\\Genetic_Kingdom\\SelectorTorre.h",
+              "RelativeDocumentMoniker": "SelectorTorre.h",
+              "ToolTip": "C:\\Users\\Meibel\\Desktop\\1Semestre 2025\\Estructuras_de_Datos_II\\Proyecto_2\\Genetic_Kingdom\\SelectorTorre.h",
+              "RelativeToolTip": "SelectorTorre.h",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAAA0AAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-05-03T20:22:25.169Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-04T01:33:04.613Z"
             },
             {
               "$type": "Document",
@@ -201,27 +237,98 @@
               "RelativeDocumentMoniker": "Mapa.cpp",
               "ToolTip": "C:\\Users\\Meibel\\Desktop\\1Semestre 2025\\Estructuras_de_Datos_II\\Proyecto_2\\Genetic_Kingdom\\Mapa.cpp",
               "RelativeToolTip": "Mapa.cpp",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-05-03T16:54:04.018Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "TorreFactory.h",
-              "DocumentMoniker": "C:\\Users\\Meibel\\Desktop\\1Semestre 2025\\Estructuras_de_Datos_II\\Proyecto_2\\Genetic_Kingdom\\TorreFactory.h",
-              "RelativeDocumentMoniker": "TorreFactory.h",
-              "ToolTip": "C:\\Users\\Meibel\\Desktop\\1Semestre 2025\\Estructuras_de_Datos_II\\Proyecto_2\\Genetic_Kingdom\\TorreFactory.h",
-              "RelativeToolTip": "TorreFactory.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAARAAAAAAAAAA==",
+              "DocumentIndex": 12,
+              "Title": "TorreConSprite.h",
+              "DocumentMoniker": "C:\\Users\\Meibel\\Desktop\\1Semestre 2025\\Estructuras_de_Datos_II\\Proyecto_2\\Genetic_Kingdom\\TorreConSprite.h",
+              "RelativeDocumentMoniker": "TorreConSprite.h",
+              "ToolTip": "C:\\Users\\Meibel\\Desktop\\1Semestre 2025\\Estructuras_de_Datos_II\\Proyecto_2\\Genetic_Kingdom\\TorreConSprite.h",
+              "RelativeToolTip": "TorreConSprite.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-05-03T21:20:49.705Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-04T15:13:36.117Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "TorreConSprite.cpp",
+              "DocumentMoniker": "C:\\Users\\Meibel\\Desktop\\1Semestre 2025\\Estructuras_de_Datos_II\\Proyecto_2\\Genetic_Kingdom\\TorreConSprite.cpp",
+              "RelativeDocumentMoniker": "TorreConSprite.cpp",
+              "ToolTip": "C:\\Users\\Meibel\\Desktop\\1Semestre 2025\\Estructuras_de_Datos_II\\Proyecto_2\\Genetic_Kingdom\\TorreConSprite.cpp",
+              "RelativeToolTip": "TorreConSprite.cpp",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAAAkAAABiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-05-04T15:14:39.41Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 11,
+              "Title": "TipoTorre.h",
+              "DocumentMoniker": "C:\\Users\\Meibel\\Desktop\\1Semestre 2025\\Estructuras_de_Datos_II\\Proyecto_2\\Genetic_Kingdom\\TipoTorre.h",
+              "RelativeDocumentMoniker": "TipoTorre.h",
+              "ToolTip": "C:\\Users\\Meibel\\Desktop\\1Semestre 2025\\Estructuras_de_Datos_II\\Proyecto_2\\Genetic_Kingdom\\TipoTorre.h",
+              "RelativeToolTip": "TipoTorre.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-05-03T21:18:47.409Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "SelectorTorre.cpp",
+              "DocumentMoniker": "C:\\Users\\Meibel\\Desktop\\1Semestre 2025\\Estructuras_de_Datos_II\\Proyecto_2\\Genetic_Kingdom\\SelectorTorre.cpp",
+              "RelativeDocumentMoniker": "SelectorTorre.cpp",
+              "ToolTip": "C:\\Users\\Meibel\\Desktop\\1Semestre 2025\\Estructuras_de_Datos_II\\Proyecto_2\\Genetic_Kingdom\\SelectorTorre.cpp",
+              "RelativeToolTip": "SelectorTorre.cpp",
+              "ViewState": "AgIAAEsAAAAAAAAAAAAAABUAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-05-04T01:33:51.736Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "MensajeTemporal.h",
+              "DocumentMoniker": "C:\\Users\\Meibel\\Desktop\\1Semestre 2025\\Estructuras_de_Datos_II\\Proyecto_2\\Genetic_Kingdom\\MensajeTemporal.h",
+              "RelativeDocumentMoniker": "MensajeTemporal.h",
+              "ToolTip": "C:\\Users\\Meibel\\Desktop\\1Semestre 2025\\Estructuras_de_Datos_II\\Proyecto_2\\Genetic_Kingdom\\MensajeTemporal.h",
+              "RelativeToolTip": "MensajeTemporal.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-05-04T01:59:57.424Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "MensajeTemporal.cpp",
+              "DocumentMoniker": "C:\\Users\\Meibel\\Desktop\\1Semestre 2025\\Estructuras_de_Datos_II\\Proyecto_2\\Genetic_Kingdom\\MensajeTemporal.cpp",
+              "RelativeDocumentMoniker": "MensajeTemporal.cpp",
+              "ToolTip": "C:\\Users\\Meibel\\Desktop\\1Semestre 2025\\Estructuras_de_Datos_II\\Proyecto_2\\Genetic_Kingdom\\MensajeTemporal.cpp",
+              "RelativeToolTip": "MensajeTemporal.cpp",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAAACUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-05-04T02:00:47.03Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "TorreConTipo.h",
+              "DocumentMoniker": "C:\\Users\\Meibel\\Desktop\\1Semestre 2025\\Estructuras_de_Datos_II\\Proyecto_2\\Genetic_Kingdom\\TorreConTipo.h",
+              "RelativeDocumentMoniker": "TorreConTipo.h",
+              "ToolTip": "C:\\Users\\Meibel\\Desktop\\1Semestre 2025\\Estructuras_de_Datos_II\\Proyecto_2\\Genetic_Kingdom\\TorreConTipo.h",
+              "RelativeToolTip": "TorreConTipo.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-05-03T21:52:27.83Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
               "Title": "Casilla.h",
               "DocumentMoniker": "C:\\Users\\Meibel\\Desktop\\1Semestre 2025\\Estructuras_de_Datos_II\\Proyecto_2\\Genetic_Kingdom\\Casilla.h",
               "RelativeDocumentMoniker": "Casilla.h",
@@ -229,12 +336,11 @@
               "RelativeToolTip": "Casilla.h",
               "ViewState": "AgIAAA8AAAAAAAAAAAAAAAMAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-05-03T16:54:16.046Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-03T16:54:16.046Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 20,
               "Title": "Nodo.h",
               "DocumentMoniker": "C:\\Users\\Meibel\\Desktop\\1Semestre 2025\\Estructuras_de_Datos_II\\Proyecto_2\\Genetic_Kingdom\\Nodo.h",
               "RelativeDocumentMoniker": "Nodo.h",
@@ -246,19 +352,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "Mapa.h",
-              "DocumentMoniker": "C:\\Users\\Meibel\\Desktop\\1Semestre 2025\\Estructuras_de_Datos_II\\Proyecto_2\\Genetic_Kingdom\\Mapa.h",
-              "RelativeDocumentMoniker": "Mapa.h",
-              "ToolTip": "C:\\Users\\Meibel\\Desktop\\1Semestre 2025\\Estructuras_de_Datos_II\\Proyecto_2\\Genetic_Kingdom\\Mapa.h",
-              "RelativeToolTip": "Mapa.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-05-03T16:54:07.934Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 21,
               "Title": "Casilla.cpp",
               "DocumentMoniker": "C:\\Users\\Meibel\\Desktop\\1Semestre 2025\\Estructuras_de_Datos_II\\Proyecto_2\\Genetic_Kingdom\\Casilla.cpp",
               "RelativeDocumentMoniker": "Casilla.cpp",
@@ -270,7 +364,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 19,
               "Title": "estadoCasilla.h",
               "DocumentMoniker": "C:\\Users\\Meibel\\Desktop\\1Semestre 2025\\Estructuras_de_Datos_II\\Proyecto_2\\Genetic_Kingdom\\estadoCasilla.h",
               "RelativeDocumentMoniker": "estadoCasilla.h",

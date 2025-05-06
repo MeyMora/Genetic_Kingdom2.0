@@ -4,25 +4,40 @@
 #include "TorreConTipo.h"
 #include "SelectorTorre.h"
 #include "MensajeTemporal.h"
-
+#include "PanelEstadisticas.h"
 #include <filesystem>
 #include <windows.h>
-
+#include <fstream>
+#include "PanelMejora.h"
 const int CELL_SIZE = 80;
 const int ROWS = 6;
 const int COLS = 8;
-
+PanelEstadisticas panelEstadisticas;
 int oroJugador = 100; // Oro inicial del jugador
 int nivelJuego = 1;  // Nivel inicial del juego
 
 std::vector<std::unique_ptr<Torre>> torres; // Vector para almacenar las torres colocadas
+std::string ruta = "C:/Users/Meibel/Desktop/1Semestre 2025/Estructuras_de_Datos_II/Proyecto_2/Genetic_Kingdom/x64/Debug/Imagenes/torres";
+
+Torre* torreMouseEncima = nullptr;
+PanelMejora panelMejora;
 
 int main() {
+
     sf::RenderWindow window(sf::VideoMode(COLS * CELL_SIZE + 200, ROWS * CELL_SIZE), "Genetic Kingdom - Colocar Torres");
     Mapa mapa(ROWS, COLS);
 
     mapa.setEntrada(0, 3);
     mapa.setMeta(5, 3);
+    
+
+    std::ifstream test(ruta);
+    if (!test.is_open()) {
+        std::cerr << "❌ ERROR de prueba: no se encontró el archivo en:\n" << ruta << std::endl;
+    }
+    else {
+        std::cout << "✅ Archivo encontrado correctamente." << std::endl;
+    }
 
     sf::Font font;
     if (!font.loadFromFile("C:/Users/Meibel/Desktop/1Semestre 2025/Estructuras_de_Datos_II/Proyecto_2/Genetic_Kingdom/x64/Debug/OpenSans-Regular.ttf")) {
@@ -66,6 +81,23 @@ int main() {
         }
 
         mensajeUI.actualizar(); // Actualiza el temporizador del mensaje
+
+        sf::Vector2i mousePosPixel = sf::Mouse::getPosition(window);
+        sf::Vector2f mousePos = window.mapPixelToCoords(mousePosPixel);
+
+        // Torre que está debajo del mouse (si hay alguna)
+        torreMouseEncima = nullptr;
+
+        for (const auto& torre : torres) {
+            sf::Vector2f torrePos = static_cast<sf::Vector2f>(torre->getPosicion() * CELL_SIZE);
+            sf::FloatRect bounds(torrePos.x, torrePos.y, CELL_SIZE, CELL_SIZE);
+            if (bounds.contains(static_cast<sf::Vector2f>(mousePos))) {
+                torreMouseEncima = torre.get();
+                panelEstadisticas.setTorre(torreMouseEncima);
+                break;
+            }
+        }
+
 
         window.clear(sf::Color::Black);
 
@@ -113,8 +145,71 @@ int main() {
 
         window.draw(textoOro);
         window.draw(textoNivel);
+        panelEstadisticas.dibujar(window, font);
+
+        // 🆕 Dibujar torres (sprites o cuadrado)
+        for (auto& torre : torres) {
+            torre->dibujar(window);
+
+            // Detectar si el mouse está sobre esta torre
+            sf::Vector2f torrePos = static_cast<sf::Vector2f>(torre->getPosicion()) * (float)CELL_SIZE;
+            sf::FloatRect rect(torrePos, sf::Vector2f(80, 80));
+
+            if (rect.contains(static_cast<sf::Vector2f>(mousePos))) {
+                // Dibujar rango si el mouse está sobre esta torre
+                sf::CircleShape rangoVisual;
+                float radioPixeles = torre->getAlcance() * 80;
+                rangoVisual.setRadius(radioPixeles);
+                rangoVisual.setFillColor(sf::Color(0, 255, 255, 64));
+                rangoVisual.setOrigin(radioPixeles, radioPixeles);
+                rangoVisual.setPosition(torrePos.x + 40, torrePos.y + 40);
+                window.draw(rangoVisual);
+            }
+        }
+
+
+
+
+
         selectorTorre.dibujar(window);
         mensajeUI.dibujar(window); // Dibuja mensaje si está visible
+
+        if (torreMouseEncima) {
+            float radioPixeles = torreMouseEncima->getAlcance() * CELL_SIZE;
+            sf::CircleShape rangoVisual(radioPixeles);
+            rangoVisual.setFillColor(sf::Color(0, 255, 255, 64));
+            rangoVisual.setOrigin(radioPixeles, radioPixeles);
+
+            sf::Vector2i gridPos = torreMouseEncima->getPosicion();
+            rangoVisual.setPosition((gridPos.x + 0.5f) * CELL_SIZE, (gridPos.y + 0.5f) * CELL_SIZE);
+            window.draw(rangoVisual);
+        }
+
+
+
+        if (event.mouseButton.button == sf::Mouse::Left) {
+            sf::Vector2i gridPos = sf::Mouse::getPosition(window) / CELL_SIZE;
+            for (auto& torre : torres) {
+                if (torre->getPosicion() == gridPos) {
+                    panelMejora.setTorre(torre.get());
+                }
+            }
+        }
+
+        if (event.mouseButton.button == sf::Mouse::Left && panelMejora.getTorre()) {
+            if (panelMejora.clicEnBoton(sf::Mouse::getPosition(window))) {
+                Torre* t = panelMejora.getTorre();
+                if (t->upgrade(oroJugador, oroJugador)) {
+                    mensajeUI.mostrar("✅ Torre mejorada");
+                }
+                else {
+                    mensajeUI.mostrar("❌ No se pudo mejorar");
+                }
+                panelMejora.setTorre(nullptr); // Oculta el panel
+            }
+        }
+
+        panelMejora.dibujar(window, font);
 
         window.display();
     }
