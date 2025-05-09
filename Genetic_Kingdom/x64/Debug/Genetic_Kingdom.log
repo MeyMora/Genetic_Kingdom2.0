@@ -1,10 +1,31 @@
 ﻿  0 archivo(s) copiado(s)
+  PanelEstadisticas.cpp
+C:\Users\Meibel\Desktop\1Semestre 2025\Estructuras_de_Datos_II\Proyecto_2\Genetic_Kingdom\Torre.h(28,49): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
+  (compilando archivo de origen "PanelEstadisticas.cpp")
+  
+C:\Users\Meibel\Desktop\1Semestre 2025\Estructuras_de_Datos_II\Proyecto_2\Genetic_Kingdom\Torre.h(28,32): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
+  (compilando archivo de origen "PanelEstadisticas.cpp")
+  
   PanelMejora.cpp
 C:\Users\Meibel\Desktop\1Semestre 2025\Estructuras_de_Datos_II\Proyecto_2\Genetic_Kingdom\Torre.h(28,49): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
   (compilando archivo de origen "PanelMejora.cpp")
   
 C:\Users\Meibel\Desktop\1Semestre 2025\Estructuras_de_Datos_II\Proyecto_2\Genetic_Kingdom\Torre.h(28,32): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
   (compilando archivo de origen "PanelMejora.cpp")
+  
+  Torre.cpp
+C:\Users\Meibel\Desktop\1Semestre 2025\Estructuras_de_Datos_II\Proyecto_2\Genetic_Kingdom\Torre.h(28,49): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
+  (compilando archivo de origen "Torre.cpp")
+  
+C:\Users\Meibel\Desktop\1Semestre 2025\Estructuras_de_Datos_II\Proyecto_2\Genetic_Kingdom\Torre.h(28,32): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
+  (compilando archivo de origen "Torre.cpp")
+  
+  TorreConSprite.cpp
+C:\Users\Meibel\Desktop\1Semestre 2025\Estructuras_de_Datos_II\Proyecto_2\Genetic_Kingdom\Torre.h(28,49): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
+  (compilando archivo de origen "TorreConSprite.cpp")
+  
+C:\Users\Meibel\Desktop\1Semestre 2025\Estructuras_de_Datos_II\Proyecto_2\Genetic_Kingdom\Torre.h(28,32): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
+  (compilando archivo de origen "TorreConSprite.cpp")
   
   main.cpp
 C:\Users\Meibel\Desktop\1Semestre 2025\Estructuras_de_Datos_II\Proyecto_2\Genetic_Kingdom\Torre.h(28,49): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
@@ -49,4 +70,5 @@ C:\Users\Meibel\Desktop\1Semestre 2025\Estructuras_de_Datos_II\Proyecto_2\Geneti
 C:\Users\Meibel\Desktop\1Semestre 2025\Estructuras_de_Datos_II\Proyecto_2\Genetic_Kingdom\main.cpp(203,39): warning C4566: el carácter representado por el nombre de carácter universal '\u2705' no se puede representar en la página de códigos actual (1252)
 C:\Users\Meibel\Desktop\1Semestre 2025\Estructuras_de_Datos_II\Proyecto_2\Genetic_Kingdom\main.cpp(206,39): warning C4566: el carácter representado por el nombre de carácter universal '\u274C' no se puede representar en la página de códigos actual (1252)
   Generando código...
+  LINK : no se encontró C:\Users\Meibel\Desktop\1Semestre 2025\Estructuras_de_Datos_II\Proyecto_2\Genetic_Kingdom\x64\Debug\Genetic_Kingdom.exe o no lo generó el último vínculo incremental; ejecutando vínculo completo
   Genetic_Kingdom.vcxproj -> C:\Users\Meibel\Desktop\1Semestre 2025\Estructuras_de_Datos_II\Proyecto_2\Genetic_Kingdom\x64\Debug\Genetic_Kingdom.exe
