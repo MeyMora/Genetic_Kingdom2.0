@@ -1,39 +1,78 @@
-#include "Mapa.h"
+Ôªø#include "Mapa.h"
 #include <iostream>
 #include <queue> // Necesario para usar std::queue en BFS
+#include <filesystem> // Necesario para usar std::filesystem
+#include <SFML/Graphics.hpp>
+#include <fstream>  // Para verificar la existencia de archivos
+// Indicar que la variable global est√° definida en otro archivo
+// Declaraci√≥n de la variable global
+extern std::string ruta;
 
-
-
-Mapa::Mapa(int filas_, int columnas_) // Constructor que inicializa el mapa con las dimensiones dadas
-	: filas(filas_), columnas(columnas_), // Inicializa las dimensiones del mapa
-	grid(filas_, std::vector<Casilla>(columnas_, Casilla(0, 0))), // Inicializa la matriz de casillas
-    nodos(filas_, std::vector<Nodo*>(columnas_, nullptr))  // ? AquÌ se inicializa
+Mapa::Mapa(int filas_, int columnas_)
+    : filas(filas_),
+    columnas(columnas_),
+    grid(filas_, std::vector<Casilla>(columnas_, Casilla(0, 0))),
+    nodos(filas_, std::vector<Nodo*>(columnas_, nullptr))
 {
-	for (int i = 0; i < filas_; ++i) { // Inicializa las casillas
-		for (int j = 0; j < columnas_; ++j) { // Recorre las columnas
-			grid[i][j] = Casilla(i, j); // Crea una nueva casilla en la posiciÛn (i, j)
+    // Cargar la textura del punto de ingreso
+    if (!texturaEntrada.loadFromFile(ruta + "Inicio.png")) {
+        std::cerr << "Error al cargar la textura del punto de ingreso desde: " << ruta + "Inicio.png" << std::endl;
+    }
+
+    // Cargar la textura del puente de meta
+    if (!texturaMeta.loadFromFile(ruta + "Meta.png")) {
+        std::cerr << "Error al cargar la textura del puente de meta desde: " << ruta + "Meta.png" << std::endl;
+    }
+
+    // Inicializar la matriz de casillas
+    for (int i = 0; i < filas_; ++i) {
+        for (int j = 0; j < columnas_; ++j) {
+            grid[i][j] = Casilla(i, j);
         }
     }
 }
 
 
-void Mapa::mostrarMapa() const { // MÈtodo para mostrar el mapa en la consola
+void Mapa::mostrarMapa(sf::RenderWindow& window) const {
     for (int i = 0; i < filas; ++i) {
         for (int j = 0; j < columnas; ++j) {
+            sf::RectangleShape celda(sf::Vector2f(80, 80));
+            celda.setPosition(j * 80, i * 80);
+
             switch (grid[i][j].estado) {
-			case estadoCasilla::Empty: std::cout << ". "; break; // Casilla vacÌa
-			case estadoCasilla::Torre: std::cout << "T "; break; // Casilla ocupada por una torre
-			case estadoCasilla::Entrada: std::cout << "E "; break; // Punto de entrada de enemigos
-			case estadoCasilla::Meta: std::cout << "M "; break; // Puente (meta final)
+            case estadoCasilla::Empty:
+                celda.setFillColor(sf::Color(50, 50, 50));
+                break;
+            case estadoCasilla::Torre:
+                celda.setFillColor(sf::Color::Red);
+                break;
+            case estadoCasilla::Entrada: {
+                sf::Sprite spriteEntrada;
+                spriteEntrada.setTexture(texturaEntrada);
+                spriteEntrada.setPosition(j * 80, i * 80);
+                window.draw(spriteEntrada);
+                continue;
             }
+            case estadoCasilla::Meta: {
+                sf::Sprite spriteMeta;
+                spriteMeta.setTexture(texturaMeta);
+                spriteMeta.setPosition(j * 80, i * 80);
+                window.draw(spriteMeta);
+                continue;
+            }
+            }
+
+            celda.setOutlineThickness(1);
+            celda.setOutlineColor(sf::Color::White);
+            window.draw(celda);
         }
-        std::cout << "\n";
     }
 }
+
 
 bool Mapa::colocarTorre(int x, int y) {
     if (grid[x][y].estado != estadoCasilla::Empty) {
-        return false; // Solo se pueden poner torres en casillas vacÌas
+        return false; // Solo se pueden poner torres en casillas vac√≠as
     }
 
     // Colocamos temporalmente la torre
@@ -53,7 +92,7 @@ bool Mapa::colocarTorre(int x, int y) {
 }
 
 void Mapa::buildGraph() {
-	// MÈtodo para construir el grafo a partir del mapa
+	// M√©todo para construir el grafo a partir del mapa
 	// Limpiar nodos existentes
     for (int i = 0; i < filas; ++i) {
         for (int j = 0; j < columnas; ++j) {
@@ -88,26 +127,26 @@ void Mapa::buildGraph() {
     }
 }
 
-Nodo* Mapa::getNodo(int x, int y) { // MÈtodo para obtener el nodo correspondiente a una casilla
+Nodo* Mapa::getNodo(int x, int y) { // M√©todo para obtener el nodo correspondiente a una casilla
     if (x >= 0 && x < filas && y >= 0 && y < columnas) {
         return nodos[x][y];
     }
     return nullptr;
 }   
-// MÈtodo para establecer la entrada en el mapa
+// M√©todo para establecer la entrada en el mapa
 void Mapa::setEntrada(int x, int y) {
     if (grid[x][y].estado == estadoCasilla::Empty) {
         grid[x][y].estado = estadoCasilla::Entrada;
     }
 }
-// MÈtodo para establecer la meta en el mapa
+// M√©todo para establecer la meta en el mapa
 void Mapa::setMeta(int x, int y) { 
 	if (grid[x][y].estado == estadoCasilla::Empty) { 
         grid[x][y].estado = estadoCasilla::Meta;
     }
 }
 
-bool Mapa::existeCamino() { // MÈtodo para verificar si existe un camino entre la entrada y la meta
+bool Mapa::existeCamino() { // M√©todo para verificar si existe un camino entre la entrada y la meta
     Nodo* start = nullptr;// // Nodo de entrada
     Nodo* end = nullptr; // Nodo de meta
 
@@ -142,7 +181,7 @@ bool Mapa::existeCamino() { // MÈtodo para verificar si existe un camino entre l
         q.pop(); // Sacarlo de la cola
 
         if (actual == end) { // Si llegamos a la meta
-            return true; // Se encontrÛ un camino
+            return true; // Se encontr√≥ un camino
         }
 
         for (Nodo* vecino : actual->vecinos) { // Recorrer los vecinos
@@ -156,7 +195,7 @@ bool Mapa::existeCamino() { // MÈtodo para verificar si existe un camino entre l
         }
     }
 
-    return false; // No se encontrÛ un camino
+    return false; // No se encontr√≥ un camino
 } 
 Mapa::~Mapa() {
     for (int i = 0; i < filas; ++i) {

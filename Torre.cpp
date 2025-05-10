@@ -40,26 +40,29 @@ bool Torre::estaEnRango(sf::Vector2i enemigoPos) const {
 }
 
 bool Torre::upgrade(int oroJugador, int& oroRestante) {
-	if (nivel >= 3) return false; // No se puede mejorar más allá del nivel 3
+    if (nivel >= 3) return false; // No se puede mejorar más allá del nivel 3
 
-	int costoUpgrade = getCostoUpgrade();
-	if (oroJugador < costoUpgrade) return false; // No hay suficiente oro
+    int costoUpgrade = getCostoUpgrade();
+    if (oroJugador < costoUpgrade) return false; // No hay suficiente oro
+
+    // Descontar el oro antes de mejorar
+    oroRestante -= costoUpgrade;
 
     nivel++;
 
     switch (nivel) {
     case 1:
-        dano += 5;         // Mejora básica
+        dano += 5;
         alcance += 1;
         costo += 10;
         break;
     case 2:
-        dano += 10;        // Mejora intermedia
+        dano += 10;
         alcance += 2;
         costo += 20;
         break;
     case 3:
-        dano += 15;        // Mejora avanzada
+        dano += 15;
         alcance += 3;
         costo += 30;
         break;
@@ -67,8 +70,7 @@ bool Torre::upgrade(int oroJugador, int& oroRestante) {
         break;
     }
 
-    // Puedes también incrementar probabilidad de ataque especial
-    probabilidadEspecial += 0.05f;  // +5% cada nivel
+    probabilidadEspecial += 0.05f;  // Aumenta la probabilidad de ataque especial
 
     return true;
 }

@@ -14,7 +14,7 @@ TorreConSprite::TorreConSprite(const std::string& rutaSprite, int fila_, int col
         std::cerr << "Error cargando textura desde: " << rutaSprite << std::endl;
     }
     sprite.setTexture(textura);
-    sprite.setScale(0.22f, 0.22f);
+    sprite.setScale(0.17f, 0.17f);
     sprite.setOrigin(sprite.getLocalBounds().width / 2.f, sprite.getLocalBounds().height * 0.6f);
     sprite.setPosition((columna + 0.5f) * CELL_SIZE, (fila + 0.5f) * CELL_SIZE);
 

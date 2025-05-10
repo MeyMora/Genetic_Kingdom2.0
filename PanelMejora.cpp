@@ -11,7 +11,7 @@ PanelMejora::PanelMejora() {
 
     boton.setSize(sf::Vector2f(140, 25));
     boton.setFillColor(sf::Color(0, 100, 0));
-    boton.setPosition(posicionPanel.x + 20, posicionPanel.y + 70);
+	boton.setPosition(posicionPanel.x + 20, posicionPanel.y + 90);
 
     textoBoton.setCharacterSize(14);
     textoBoton.setFillColor(sf::Color::White);

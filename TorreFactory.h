@@ -7,22 +7,26 @@
 
 #include <memory>
 
+#include <filesystem>
 
-
+// Alias para el espacio de nombres de filesystem
+namespace fs = std::filesystem;
+// Variable global para la ruta base (si no está definida en otro lado)
+extern std::string ruta;
 std::unique_ptr<Torre> crearTorre(TipoTorre tipo, sf::Vector2i posicion) {
     std::string rutaSprite;
     switch (tipo) {
     case TipoTorre::Arquera:
-		rutaSprite = "Imagenes/torres/Torre_1.png";
+        rutaSprite = ruta+ "/Torre_1.png";
 
         return std::make_unique<TorreConSprite>(rutaSprite, posicion.y, posicion.x, 1.5f, 10);
 
     case TipoTorre::Mago:
-        rutaSprite = "Imagenes/torres/Torre_2.png";
+        rutaSprite = ruta + "/Torre_2.png";
         return std::make_unique<TorreConSprite>(rutaSprite, posicion.y, posicion.x, 2.0f, 20);
 
     case TipoTorre::Artillero:
-        rutaSprite = "Imagenes/torres/Torre_3.png";
+        rutaSprite = ruta + "/Torre_3.png";
         return std::make_unique<TorreConSprite>(rutaSprite, posicion.y, posicion.x, 3.0f, 30);
 
     default:
