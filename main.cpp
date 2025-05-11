@@ -9,6 +9,7 @@
 #include <windows.h>
 #include <fstream>
 #include "PanelMejora.h"
+#include <string>
 const int CELL_SIZE = 80;
 const int ROWS = 6;
 const int COLS = 8;
@@ -17,12 +18,55 @@ int oroJugador = 100; // Oro inicial del jugador
 int nivelJuego = 1;  // Nivel inicial del juego
 
 std::vector<std::unique_ptr<Torre>> torres; // Vector para almacenar las torres colocadas
-std::string ruta = "C:/Users/Meibel/Desktop/1Semestre 2025/Estructuras_de_Datos_II/Proyecto_2/Genetic_Kingdom/x64/Debug/Imagenes/torres";
+
+namespace fs = std::filesystem;
+// Ruta global para las imágenes
+std::string ruta = fs::current_path().parent_path().string() + "/Debug/Imagenes/torres/";
 
 Torre* torreMouseEncima = nullptr;
 PanelMejora panelMejora;
 
+sf::Sprite spriteEntrada;
+sf::Sprite spriteMeta;
+
+// Función para convertir estadoCasilla a string
+std::string estadoToString(estadoCasilla estado) {
+    switch (estado) {
+    case estadoCasilla::Empty:   return "Empty";
+    case estadoCasilla::Torre:   return "Torre";
+    case estadoCasilla::Entrada: return "Entrada";
+    case estadoCasilla::Meta:    return "Meta";
+    default: return "Desconocido";
+    }
+}
 int main() {
+
+    std::cout << "Directorio actual: " << fs::current_path().string() << std::endl;
+    std::cout << "Ruta base calculada: " << ruta << std::endl;
+
+
+    // Cargar texturas
+    sf::Texture texturaEntrada, texturaMeta;
+    std::string rutaEntrada = ruta + "Inicio.png";
+    std::string rutaMeta = ruta + "Meta.png";
+
+    if (!texturaEntrada.loadFromFile(rutaEntrada)) {
+        std::cerr << "Error al cargar la textura de ingreso desde: " << rutaEntrada << std::endl;
+    }
+    else {
+        std::cout << "✅ Textura de ingreso cargada correctamente." << std::endl;
+        spriteEntrada.setTexture(texturaEntrada);  // 🆕 Asignar textura al sprite
+    }
+
+    if (!texturaMeta.loadFromFile(rutaMeta)) {
+        std::cerr << "Error al cargar la textura de meta desde: " << rutaMeta << std::endl;
+    }
+    else {
+        std::cout << "✅ Textura de meta cargada correctamente." << std::endl;
+        spriteMeta.setTexture(texturaMeta);  // 🆕 Asignar textura al sprite
+    }
+
+
 
     sf::RenderWindow window(sf::VideoMode(COLS * CELL_SIZE + 200, ROWS * CELL_SIZE), "Genetic Kingdom - Colocar Torres");
     Mapa mapa(ROWS, COLS);
@@ -30,14 +74,9 @@ int main() {
     mapa.setEntrada(0, 3);
     mapa.setMeta(5, 3);
     
+   
 
-    std::ifstream test(ruta);
-    if (!test.is_open()) {
-        std::cerr << "❌ ERROR de prueba: no se encontró el archivo en:\n" << ruta << std::endl;
-    }
-    else {
-        std::cout << "✅ Archivo encontrado correctamente." << std::endl;
-    }
+
 
     sf::Font font;
     if (!font.loadFromFile("C:/Users/Meibel/Desktop/1Semestre 2025/Estructuras_de_Datos_II/Proyecto_2/Genetic_Kingdom/x64/Debug/OpenSans-Regular.ttf")) {
@@ -101,31 +140,65 @@ int main() {
 
         window.clear(sf::Color::Black);
 
+
+
+
+
+        // Verificar el tamaño de la textura antes de escalar
+        if (texturaEntrada.getSize().x > CELL_SIZE || texturaEntrada.getSize().y > CELL_SIZE) {
+            float scaleX = static_cast<float>(CELL_SIZE) / texturaEntrada.getSize().x;
+            float scaleY = static_cast<float>(CELL_SIZE) / texturaEntrada.getSize().y;
+            spriteEntrada.setScale(scaleX, scaleY);
+        }
+
+        if (texturaMeta.getSize().x > CELL_SIZE || texturaMeta.getSize().y > CELL_SIZE) {
+            float scaleX = static_cast<float>(CELL_SIZE) / texturaMeta.getSize().x;
+            float scaleY = static_cast<float>(CELL_SIZE) / texturaMeta.getSize().y;
+            spriteMeta.setScale(scaleX, scaleY);
+        }
+
+        // 📝 Imprimir el estado de la casilla antes de dibujar
         for (int fila = 0; fila < ROWS; ++fila) {
             for (int col = 0; col < COLS; ++col) {
-                sf::RectangleShape celda(sf::Vector2f(CELL_SIZE - 2, CELL_SIZE - 2));
-                celda.setPosition(col * CELL_SIZE, fila * CELL_SIZE);
+                estadoCasilla estado = mapa.getEstado(fila, col);
 
-                switch (mapa.getEstado(fila, col)) {
+                // Dibujar la celda primero
+                sf::RectangleShape celda(sf::Vector2f(static_cast<float>(CELL_SIZE) - 2, static_cast<float>(CELL_SIZE) - 2));
+                celda.setPosition(static_cast<float>(col * CELL_SIZE), static_cast<float>(fila * CELL_SIZE));
+                celda.setFillColor(sf::Color(50, 50, 50)); // Color por defecto
+
+                // Definir el color de la celda según el estado
+                switch (estado) {
                 case estadoCasilla::Empty:
                     celda.setFillColor(sf::Color(50, 50, 50));
                     break;
                 case estadoCasilla::Torre:
                     celda.setFillColor(sf::Color::Red);
                     break;
-                case estadoCasilla::Entrada:
-                    celda.setFillColor(sf::Color::Green);
-                    break;
-                case estadoCasilla::Meta:
-                    celda.setFillColor(sf::Color::Blue);
+                default:
                     break;
                 }
 
+                // Dibujar la celda en la pantalla
                 celda.setOutlineThickness(1);
                 celda.setOutlineColor(sf::Color::White);
                 window.draw(celda);
+
+                // 🔄 Dibujar el sprite solo una vez para evitar parpadeo
+                if (estado == estadoCasilla::Entrada) {
+                    spriteEntrada.setPosition(static_cast<float>(col * CELL_SIZE), static_cast<float>(fila * CELL_SIZE));
+                    window.draw(spriteEntrada);
+
+                }
+
+                if (estado == estadoCasilla::Meta) {
+                    spriteMeta.setPosition(static_cast<float>(col * CELL_SIZE), static_cast<float>(fila * CELL_SIZE));
+                    window.draw(spriteMeta);
+
+                }
             }
         }
+
 
         // Mostrar oro
         sf::Text textoOro;
@@ -199,15 +272,23 @@ int main() {
         if (event.mouseButton.button == sf::Mouse::Left && panelMejora.getTorre()) {
             if (panelMejora.clicEnBoton(sf::Mouse::getPosition(window))) {
                 Torre* t = panelMejora.getTorre();
+
+                // Mejorar la torre y actualizar el sprite si la mejora fue exitosa
                 if (t->upgrade(oroJugador, oroJugador)) {
-                    mensajeUI.mostrar("✅ Torre mejorada");
+                    dynamic_cast<TorreConSprite*>(t)->mejorarSprite();  // Cambiar el sprite al nuevo nivel
+                    mensajeUI.mostrar(" Torre mejorada a nivel " + std::to_string(t->getNivel()));
                 }
                 else {
-                    mensajeUI.mostrar("❌ No se pudo mejorar");
+                    mensajeUI.mostrar(" No se pudo mejorar la torre");
                 }
+
                 panelMejora.setTorre(nullptr); // Oculta el panel
             }
         }
+
+
+
+
 
         panelMejora.dibujar(window, font);
 

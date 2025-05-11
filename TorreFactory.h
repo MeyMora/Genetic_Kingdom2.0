@@ -19,15 +19,15 @@ std::unique_ptr<Torre> crearTorre(TipoTorre tipo, sf::Vector2i posicion) {
     case TipoTorre::Arquera:
         rutaSprite = ruta+ "/Torre_1.png";
 
-        return std::make_unique<TorreConSprite>(rutaSprite, posicion.y, posicion.x, 1.5f, 10);
+        return std::make_unique<TorreConSprite>(rutaSprite, posicion.y, posicion.x, 1.5f, 10, tipo);
 
     case TipoTorre::Mago:
         rutaSprite = ruta + "/Torre_2.png";
-        return std::make_unique<TorreConSprite>(rutaSprite, posicion.y, posicion.x, 2.0f, 20);
+        return std::make_unique<TorreConSprite>(rutaSprite, posicion.y, posicion.x, 2.0f, 20, tipo);
 
     case TipoTorre::Artillero:
         rutaSprite = ruta + "/Torre_3.png";
-        return std::make_unique<TorreConSprite>(rutaSprite, posicion.y, posicion.x, 3.0f, 30);
+        return std::make_unique<TorreConSprite>(rutaSprite, posicion.y, posicion.x, 3.0f, 30, tipo);
 
     default:
         return nullptr;
