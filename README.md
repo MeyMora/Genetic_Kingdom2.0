@@ -3,18 +3,12 @@ Instituto Tecnológico de Costa Rica<br>
 Escuela de Ingeniería en Computadores<br>
 Algoritmos y Estructuras de Datos II (CE 2103)<br>
 I Semestre 2025<br>
-# OBJETIVOS
-GENERAL<br>
-• Diseñar e implementar un juego de estilo “Tower defense” en que se apliquen algoritmos genéticos y pathfinding <br>
-ESPECÍFICOS<br>
-• Implementar algoritmos genéticos y pathfinding en el lenguaje de programación C++.<br>
-• Diseñar la solución de un problema mediante OOP aplicada a C++.<br>
-• Implementar un diseño OOP en el lenguaje de programación C++.<br>
 
+## Descripción General
+
+Genetic Kingdom es un juego tower defense ambientado en la época medieval donde defiendes tu castillo contra oleadas de enemigos que evolucionan. A medida que eliminas enemigos, estos se adaptan a tu estrategia mediante algoritmos genéticos, volviéndose progresivamente más desafiantes. El juego implementa el algoritmo de pathfinding A* para el movimien
 
 # REQUERIMIENTOS
-El proyecto consiste en implementar un juego estilo “Tower Defense” ambientado en la edad media en C++ para desktop. El juego genera oleadas de enemigos de distintas clases y categorías. El jugador se encarga de colocar torres en lugares predeterminados para evitar que los enemigos crucen el puente del castillo. Después de cada oleada, los enemigos evolucionan haciendo más difícil evitar que los enemigos crucen el puente. <br>
-
 
 | ID | Descripción | Puntos |
 |-----------|-----------|-----------|
