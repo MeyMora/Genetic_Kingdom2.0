@@ -10,7 +10,7 @@
 #include <algorithm>
 #include <iostream>
 
-// Add this line - defines equality comparison for SDL_Point
+// Añadir esta línea - define la comparación de igualdad para SDL_Point
 inline bool operator==(const SDL_Point& a, const SDL_Point& b) {
     return a.x == b.x && a.y == b.y;
 }
@@ -24,7 +24,8 @@ private:
         int hCost;           // Heurística (estimación hasta el destino)
         
         // Obtener costo total (f = g + h)
-        int getFCost() const { return gCost + hCost; }
+        int getFCost() const { 
+            return gCost + hCost; }
         
         // Constructor
         Node(SDL_Point pos, int g, int h) : position(pos), gCost(g), hCost(h) {}
@@ -163,5 +164,4 @@ private:
         return path;
     }
 };
-
 #endif // ASTAR_H
