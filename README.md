@@ -22,7 +22,13 @@ Genetic Kingdom es un juego tower defense ambientado en la época medieval donde
 | 008    | Los enemigos utilizan Pathfinding A* para encontrar el camino hacia el puente del castillo.    | 20    |
 | 009    | El juego muestra un panel con estadísticas como:<br> •Generaciones transcurridas <br> •Enemigos muertos en cada oleada<br> •Fitness de cada individuo de la oleada<br> •Nivel de cada torre <br> •Probabilidad de mutaciones y cantidad de mutaciones ocurridas <br>   | 5     |
 
-## ✨ Características
+
+### Requisitos Previos
+
+- Compilador compatible con C++17 (se recomienda g++ 11.2.0 o más reciente)
+- Bibliotecas SDL2, SDL2_image y SDL2_ttf
+
+## Características
 
 - Tres tipos únicos de torres (Arqueros, Magos, Artillería) con diferentes habilidades
 - Cuatro clases de enemigos (Ogros, Elfos Oscuros, Harpías, Mercenarios) con resistencias variadas
@@ -32,7 +38,7 @@ Genetic Kingdom es un juego tower defense ambientado en la época medieval donde
 - Sistema de retroalimentación de combate en tiempo real
 - Gestión dinámica de recursos
 
-## 🎮 Cómo Jugar
+## Cómo Jugar
 
 1. **Inicia el juego** ejecutando el programa.
 2. **Construye torres** seleccionando un tipo de torre desde el menú superior y haciendo clic en un espacio vacío del mapa.
