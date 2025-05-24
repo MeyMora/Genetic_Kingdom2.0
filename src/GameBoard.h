@@ -11,6 +11,7 @@ private:
     int rows;
     int cols;
     std::vector<std::vector<int>> grid; // 0 = vacío, 1 = camino, 2 = torre
+    std::vector<SDL_Point> mainPath;
     
     // Posiciones de entrada y salida (puente)
     SDL_Point entrance;
@@ -25,6 +26,9 @@ public:
     // Verifica si hay al menos un camino disponible de entrada a salida
     bool hasValidPath();
 
+    std::vector<SDL_Point> getMainPath();
+    void showPath(std::vector<SDL_Point> path);
+
     // Inicializa el tablero con múltiples caminos
     void initializeMap();
     
@@ -32,7 +36,7 @@ public:
     void render(SDL_Renderer* renderer) const;
     
     // Verifica si es válido colocar una torre en (r, c)
-    bool isValidTowerPosition(int r, int c) const;
+    bool isValidTowerPosition(int r, int c);
     
     // Coloca una torre en (r, c) si es válido
     bool placeTower(int r, int c);
@@ -54,4 +58,4 @@ public:
     bool isCellWalkable(int x, int y) const;
 };
 
-#endif GAMEBOARD_H
+#endif

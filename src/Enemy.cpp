@@ -1,6 +1,6 @@
 #include "Enemy.h"
 #include "GameBoard.h"  // Include the full GameBoard definition
-#include "AStar.h"      // Include for A* pathfinding
+#include "AStar.cpp"      // Include for A* pathfinding
 #include <cmath>
 #include <iostream>
 
@@ -162,8 +162,9 @@ void Enemy::setPath(const std::vector<SDL_Point>& newPath) {
     reachedEnd = false;
 }
 
-void Enemy::recalculatePath(GameBoard* board) {
-    if (!board || path.empty()) return;
+std::vector<SDL_Point> Enemy::recalculatePath(GameBoard* board) {
+    std::vector<SDL_Point> newGridPath;
+    if (!board || path.empty()) return newGridPath;
     
     // Convertir posición actual a coordenadas de grid
     int gridSize = 50;
@@ -182,13 +183,12 @@ void Enemy::recalculatePath(GameBoard* board) {
     };
     
     // Recalcular camino con A*
-    std::vector<SDL_Point> newGridPath = AStar::findPath(
-        isWalkable, {currentGridX, currentGridY}, finalGridPoint, 
-        board->getCols(), board->getRows());
+    newGridPath = AStar::findPath(isWalkable, {currentGridX, currentGridY}, 
+        finalGridPoint, board->getCols(), board->getRows());
     
     if (newGridPath.empty()) {
         std::cout << "No se pudo recalcular camino para " << getType() << std::endl;
-        return;
+        return newGridPath;
     }
     
     // Convertir a coordenadas de píxeles
@@ -204,4 +204,5 @@ void Enemy::recalculatePath(GameBoard* board) {
     // Establecer nuevo camino
     setPath(newPixelPath);
     std::cout << "Camino recalculado para " << getType() << " con " << newPixelPath.size() << " puntos" << std::endl;
+    return newGridPath;
 }

@@ -209,20 +209,19 @@ void Game::handleEvents() {
                 }
                 
                 // Si hay un tipo de torre seleccionado y la posición es válida
-                if (towerManager->getSelectedType() != TowerType::NONE &&
-                    board->isValidTowerPosition(gridPos.y, gridPos.x)) {
-                    
+                if (towerManager->getSelectedType() != TowerType::NONE) {
+                    if (board->placeTower(gridPos.y, gridPos.x)) {
                     // Intentar crear torre
-                    if (towerManager->createTower(gridPos.y, gridPos.x)) {
-                        board->placeTower(gridPos.y, gridPos.x);
-                        std::cout << "Torre colocada en (" 
-                                  << gridPos.y << "," << gridPos.x 
-                                  << "). Oro restante: " << resources->getGold() << std::endl;
-                        
-                        // MODIFICACIÓN PARA A*: Regenerar caminos cuando se coloca una torre
-                        // Esto hace que los enemigos recalculen sus rutas cuando hay un nuevo obstáculo
-                        board->hasValidPath();
-                        enemyManager->generatePaths(board);
+                        if (towerManager->createTower(gridPos.y, gridPos.x)) {
+                            std::cout << "Torre colocada en (" 
+                                    << gridPos.y << "," << gridPos.x 
+                                    << "). Oro restante: " << resources->getGold() << std::endl;
+                            
+                            // MODIFICACIÓN PARA A*: Regenerar caminos cuando se coloca una torre
+                            // Esto hace que los enemigos recalculen sus rutas cuando hay un nuevo obstáculo
+                            board->hasValidPath();
+                            enemyManager->generatePaths(board);
+                        }
                     }
                 }
             }

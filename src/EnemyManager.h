@@ -9,7 +9,7 @@
 #include "Enemy.h"
 #include "GameBoard.h"
 #include "ResourceSystem.h"
-#include "AStar.h"
+#include "AStar.cpp"
 #include "GeneticAlgorithm.h"
 
 
@@ -77,6 +77,8 @@ private:
 
     // Genera caminos alternativos
     void generateAlternativePaths(GameBoard* board, SDL_Point entrance, SDL_Point exit);
+
+    void generateEnemyPaths(GameBoard* board);
 
     // Verifica si un camino es suficientemente diferente de los existentes
     bool isPathSufficientlyDifferent(const std::vector<SDL_Point>& newPath);

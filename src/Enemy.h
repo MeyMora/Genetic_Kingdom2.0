@@ -73,7 +73,7 @@ public:
     float getPathProgress() const { return static_cast<float>(currentPathIndex) / path.size(); }
 
     // Recalcular camino usando A*
-    void recalculatePath(GameBoard* board);
+    std::vector<SDL_Point> recalculatePath(GameBoard* board);
 
     // Establecer el tablero para recálculos de camino
     void setGameBoard(GameBoard* board) { gameBoard = board; }

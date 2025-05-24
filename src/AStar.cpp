@@ -102,7 +102,7 @@ public:
             closedSet.insert(current.position);
             
             // Explorar vecinos
-            for (int i = 0; i < 4; i++) {
+            for (int i = 0; i < 8; i++) {
                 int newX = current.position.x + dx[i];
                 int newY = current.position.y + dy[i];
                 
@@ -114,14 +114,19 @@ public:
                     closedSet.find(neighbor) != closedSet.end()) {
                     continue;
                 }
-                if (dy != 0 && dx != 0 || !isWalkable(newX - dx[i], newY) || 
-                    !isWalkable(newX, newY - dy[i])) { // Diagonal move
-                    // Both adjacent sides of the corner must be walkable
-                    continue;
+                bool diagonal = (dx[i] != 0 && dy[i] != 0);
+                if (diagonal) { // Diagonal move
+                    int sideX = current.position.x + dx[i];
+                    int sideY = current.position.y;
+                    int sideX2 = current.position.x;
+                    int sideY2 = current.position.y + dy[i];
+                    if (!isWalkable(sideX, sideY) || !isWalkable(sideX2, sideY2))
+                        continue;
                 }
                 
                 // Calcular nuevo costo G (distancia desde inicio)
-                int tentativeGScore = (std::abs(dx[i]) == 1 && std::abs(dy[i] == 1)) ? 14 : 10;
+                int moveCost = diagonal ? 14 : 10;
+                int tentativeGScore = gScore[current.position] + moveCost;
                 
                 // Si es un nodo nuevo o encontramos un camino mejor
                 if (gScore.find(neighbor) == gScore.end() || tentativeGScore < gScore[neighbor]) {

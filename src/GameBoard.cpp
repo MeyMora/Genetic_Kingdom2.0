@@ -1,6 +1,6 @@
 #include "GameBoard.h"
 #include <iostream>
-#include "AStar.h"
+#include "AStar.cpp"
 
 const int GRID_SIZE = 50; // Tamaño de cada celda
 
@@ -37,32 +37,34 @@ bool GameBoard::hasValidPath() {
     return findPath(entrance, exit);
 }
 
+std::vector<SDL_Point> GameBoard::getMainPath() {
+    return mainPath;
+}
+
+void GameBoard::showPath(std::vector<SDL_Point> path) {
+    for (SDL_Point point : path) {
+        grid[point.y][point.x] = 1;
+    }
+}
+
 bool GameBoard::findPath(SDL_Point start, SDL_Point end) {
     auto isWalkable = [this](int x, int y) {
         return this->isCellWalkable(x, y);
     };
+
+    std::cout << "Generando camino con A* desde (" << start.x << "," << start.y 
+              << ") hasta (" << end.x << "," << end.y << ")" << std::endl;
 
     std::vector<SDL_Point> path = AStar::findPath(
         isWalkable, {start.x, start.y}, end, 
         getCols(), getRows()); 
 
     if (!path.empty()) {
-        for (int r = 0; r < rows; r++) {
-            for (int c = 0; c < cols; c++) {
-                if (grid[r][c] != 2) { // No tocar las torres existentes
-                    grid[r][c] = 0;
-                }
-            }
-        }
-        
-        grid[entrance.y][entrance.x] = 1;
-        grid[exit.y][exit.x] = 1;
-
-        for (SDL_Point point : path) {
-            grid[point.y][point.x] = 1;
-        }
+        mainPath = path;
+        showPath(path);
         return true;
-    }    
+    }
+    std::cerr << "¡Error! A* no pudo encontrar un camino." << std::endl;    
     return false;
 }
 
@@ -104,27 +106,49 @@ void GameBoard::render(SDL_Renderer* renderer) const {
     SDL_RenderFillRect(renderer, &exitRect);
 }
 
-bool GameBoard::isValidTowerPosition(int r, int c) const {
+bool GameBoard::isValidTowerPosition(int r, int c) {
     // Verificar límites
-    if (r < 0 || r >= rows || c < 0 || c >= cols) {
+    if (r < 0 || r >= rows || c < 0 || c >= cols)
         return false;
+
+    // No permitir en entrada o salida
+    if ((r == entrance.y && c == entrance.x) ||
+        (r == exit.y && c == exit.x))
+        return false;
+
+    // Ya hay una torre ahí
+    if (grid[r][c] == 2)
+        return false;
+
+    // Guardar el estado original
+    int originalValue = grid[r][c];
+    grid[r][c] = 2;  // Colocar torre temporalmente
+
+    // Probar si A* puede encontrar un nuevo camino
+    auto isWalkable = [this](int x, int y) {
+        return this->isCellWalkable(x, y);
+    };
+
+    std::vector<SDL_Point> newPath = AStar::findPath(isWalkable, entrance, exit, getCols(), getRows());
+
+    if (!newPath.empty()) {
+        // Actualizar mainPath y mostrarlo en el grid
+        mainPath = newPath;
+        for (int r = 0; r < rows; ++r)
+            for (int c = 0; c < cols; ++c)
+                if (grid[r][c] == 1)
+                    grid[r][c] = 0;
+        showPath(newPath);
+        return true;
     }
-    
-    // Simular colocación para verificar si bloquearía todos los caminos
-    std::vector<std::vector<int>> tempGrid = grid;
-    tempGrid[r][c] = 2; // Colocar torre temporalmente
-    
-    // Crear tablero temporal para verificar camino
-    GameBoard tempBoard = *this;
-    tempBoard.grid = tempGrid;
-    
-    // Verificar si hay un camino válido después de colocar la torre
-    return tempBoard.hasValidPath();
+
+    // Restaurar si no se pudo encontrar nuevo camino
+    grid[r][c] = originalValue;
+    return false;
 }
 
 bool GameBoard::placeTower(int r, int c) {
     if (isValidTowerPosition(r, c)) {
-        grid[r][c] = 2;
         return true;
     }
     return false;
@@ -148,7 +172,5 @@ bool GameBoard::isCellWalkable(int x, int y) const {
     }
     
     // Celda es caminable si es un camino (1) o entrada/salida
-    return grid[y][x] != 2 || 
-           (x == entrance.x && y == entrance.y) || 
-           (x == exit.x && y == exit.y);
+    return grid[y][x] != 2;
 }

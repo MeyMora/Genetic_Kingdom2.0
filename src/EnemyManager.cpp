@@ -81,72 +81,33 @@ bool EnemyManager::loadTextures(SDL_Renderer* renderer) {
 }
 
 void EnemyManager::generatePaths(GameBoard* board) {
-
-    generatePathsWithAStar(board);
-
     // Limpiar caminos anteriores
-    // paths.clear();
+    paths.clear();
     
-    // std::vector<SDL_Point> mainPath;
-    
-    // // Punto de entrada en píxeles (centro de la celda)
-    // int gridSize = 50;  // Tamaño de cada celda
-    // SDL_Point entrance = board->getEntrancePoint();
-    // SDL_Point exit = board->getExitPoint();
-    
-    // std::cout << "Generando caminos desde (" << entrance.x << "," << entrance.y 
-    //           << ") hasta (" << exit.x << "," << exit.y << ")" << std::endl;
-    
-    // // Versión mejorada: crear camino siguiendo exactamente las celdas de camino en el tablero
-    // // Primero obtenemos el camino de celdas usando A* o BFS
-    // std::vector<SDL_Point> gridPath;
-    
-    // // Simplificado para este ejemplo: usamos una búsqueda en línea recta desde la entrada hasta la salida
-    // // (En una implementación completa, aquí usarías A*)
-    
-    // // Punto inicial (entrada)
-    // gridPath.push_back(entrance);
-    
-    // // Camino central - buscar celdas de camino consecutivas
-    // // Para cada columna desde la entrada hasta la salida
-    // for (int c = entrance.x + 1; c < exit.x; c++) {
-    //     // Para cada fila, buscar una celda de camino
-    //     for (int r = 0; r < board->getRows(); r++) {
-    //         if (board->getCellType(r, c) == 1) {  // Si es un camino
-    //             // Verificar si está conectado con la celda anterior en el camino
-    //             if (!gridPath.empty()) {
-    //                 SDL_Point lastCell = gridPath.back();
-    //                 // Si es adyacente o está a una distancia de 1 celda
-    //                 if ((abs(r - lastCell.y) + abs(c - lastCell.x)) <= 2) {
-    //                     gridPath.push_back({c, r});
-    //                     break;  // Solo agregar una celda por columna
-    //                 }
-    //             }
-    //         }
-    //     }
-    // }
-    
-    // // Punto final (salida)
-    // gridPath.push_back(exit);
-    
-    // // Ahora convertir las coordenadas de la cuadrícula a coordenadas de píxeles (centro de cada celda)
-    // for (const SDL_Point& gridCell : gridPath) {
-    //     SDL_Point pixelPos = {
-    //         gridCell.x * gridSize + gridSize/2,
-    //         gridCell.y * gridSize + gridSize/2
-    //     };
-    //     mainPath.push_back(pixelPos);
-        
-    //     std::cout << "Punto de camino: coordenadas de grid (" << gridCell.x << "," << gridCell.y 
-    //               << ") -> píxeles (" << pixelPos.x << "," << pixelPos.y << ")" << std::endl;
-    // }
-    
-    // // Agregar este camino a la lista
-    // paths.push_back(mainPath);
-    
-    // // En la versión final, aquí generarías múltiples caminos con A*
-    // std::cout << "Camino generado con " << mainPath.size() << " puntos" << std::endl;
+    // Obtener puntos de entrada y salida
+    SDL_Point entrance = board->getEntrancePoint();
+    SDL_Point exit = board->getExitPoint();
 
+    std::vector<SDL_Point> mainGridPath =  board->getMainPath();
+
+    int gridSize = 50;
+    std::vector<SDL_Point> mainPixelPath;
+    
+    for (const SDL_Point& gridCell : mainGridPath) {
+        SDL_Point pixelPos = {
+            gridCell.x * gridSize + gridSize/2,
+            gridCell.y * gridSize + gridSize/2
+        };
+        mainPixelPath.push_back(pixelPos);
+        
+        std::cout << "Punto de camino: coordenadas de grid (" << gridCell.x << "," << gridCell.y 
+                  << ") -> píxeles (" << pixelPos.x << "," << pixelPos.y << ")" << std::endl;
+    }
+    paths.push_back(mainPixelPath);
+
+    generateEnemyPaths(board);
+    
+    std::cout << "Total de caminos generados: " << paths.size() << std::endl;
 }
 
 
@@ -206,15 +167,9 @@ void EnemyManager::generatePathsWithAStar(GameBoard* board) {
 void EnemyManager::generateAlternativePaths(GameBoard* board, SDL_Point entrance, SDL_Point exit) {
     int gridSize = 50;
     
-    // Función para comprobar si una celda es caminable
-    auto isWalkable = [board](int x, int y) {
-        return board->isCellWalkable(x, y);
-    };
-    
     // Intentar generar caminos alternativos añadiendo "obstáculos temporales"
     // en diferentes puntos del camino principal
-    std::vector<SDL_Point> mainGridPath = AStar::findPath(
-        isWalkable, entrance, exit, board->getCols(), board->getRows());
+    std::vector<SDL_Point> mainGridPath = paths[0];
     
     if (mainGridPath.size() < 4) {
         // Camino demasiado corto para generar alternativas
@@ -253,6 +208,7 @@ void EnemyManager::generateAlternativePaths(GameBoard* board, SDL_Point entrance
             // Añadir a la lista de caminos si es lo suficientemente diferente
             if (isPathSufficientlyDifferent(altPixelPath)) {
                 paths.push_back(altPixelPath);
+                board->showPath(altGridPath);
                 std::cout << "Camino alternativo generado con " << altPixelPath.size() << " puntos." << std::endl;
             }
             
@@ -261,6 +217,26 @@ void EnemyManager::generateAlternativePaths(GameBoard* board, SDL_Point entrance
                 break;
             }
         }
+    }
+    
+}
+
+void EnemyManager::generateEnemyPaths(GameBoard* board) {
+    int gridSize = 50;
+    
+    for (int i = 0; i < enemies.size(); i++) {
+        std::vector<SDL_Point> newGridPath = enemies[i]->recalculatePath(board);
+        if (newGridPath.empty()) continue;
+        board->showPath(newGridPath);
+        std::vector<SDL_Point> newPixelPath;
+        for (const SDL_Point& gridPoint : newGridPath) {
+            SDL_Point pixelPos = {
+                gridPoint.x * gridSize + gridSize/2,
+                gridPoint.y * gridSize + gridSize/2
+            };
+            newPixelPath.push_back(pixelPos);
+        }
+        paths.push_back(newPixelPath);
     }
 }
 
