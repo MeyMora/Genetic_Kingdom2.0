@@ -12,6 +12,7 @@ private:
     int cols;
     std::vector<std::vector<int>> grid; // 0 = vacío, 1 = camino, 2 = torre
     std::vector<SDL_Point> mainPath;
+    std::vector<SDL_Point> prevPath;
     
     // Posiciones de entrada y salida (puente)
     SDL_Point entrance;
@@ -40,6 +41,7 @@ public:
     
     // Coloca una torre en (r, c) si es válido
     bool placeTower(int r, int c);
+    void deleteTower(int r, int c);
     
     // Convierte coordenadas de pantalla a coordenadas de grid
     SDL_Point screenToGrid(int x, int y) const;

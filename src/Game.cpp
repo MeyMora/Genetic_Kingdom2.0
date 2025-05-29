@@ -222,7 +222,11 @@ void Game::handleEvents() {
                             board->hasValidPath();
                             enemyManager->generatePaths(board);
                         }
+                        else {
+                            board->deleteTower(gridPos.y, gridPos.x);
+                        }
                     }
+                    
                 }
             }
         }

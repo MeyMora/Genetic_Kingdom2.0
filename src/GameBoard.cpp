@@ -133,6 +133,7 @@ bool GameBoard::isValidTowerPosition(int r, int c) {
 
     if (!newPath.empty()) {
         // Actualizar mainPath y mostrarlo en el grid
+        prevPath = mainPath;
         mainPath = newPath;
         for (int r = 0; r < rows; ++r)
             for (int c = 0; c < cols; ++c)
@@ -152,6 +153,18 @@ bool GameBoard::placeTower(int r, int c) {
         return true;
     }
     return false;
+}
+
+void GameBoard::deleteTower(int r, int c) {
+    if (grid[r][c] == 2) {
+        grid[r][c] = 0;
+        mainPath = prevPath;
+        for (int r = 0; r < rows; ++r)
+            for (int c = 0; c < cols; ++c)
+                if (grid[r][c] == 1)
+                    grid[r][c] = 0;
+        showPath(mainPath);
+    }
 }
 
 SDL_Point GameBoard::screenToGrid(int x, int y) const {
